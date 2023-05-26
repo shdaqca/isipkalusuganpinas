@@ -86,7 +86,7 @@
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
             }
-            document.getElementById(tabName).style.display = "block";
+            document.getElementById(tabName).style.display = "flex";
             evt.currentTarget.className += " active";
         }
     </script>
@@ -121,23 +121,29 @@
         </div>
 
         <!---------------------- TABS ---------------------->
-        <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'Matuto')" id="defaultOpen">Matuto</button>
-            <button class="tablinks" onclick="openTab(event, 'Makibaka')">Makibaka</button>
-            <button class="tablinks" onclick="openTab(event, 'Makisama')">Makisama</button>
-        </div>
+        <ul class="nav nav-tabs align-self-center">
+            <li class="nav-item">
+                <a class="nav-link tablinks text-success-emphasis" style="cursor: pointer;" onclick="openTab(event, 'Matuto')" id="defaultOpen">Matuto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tablinks text-success-emphasis" style="cursor: pointer;" onclick="openTab(event, 'Makibaka')">Makibaka</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tablinks text-success-emphasis" style="cursor: pointer;" onclick="openTab(event, 'Makisama')">Makisama</a>
+            </li>
+        </ul>
         
                 <!---------------------- MATUTO TAB ---------------------->
-        <div id="Matuto" class="tabcontent d-flex flex-column m-5">
-            <div class="d-flex flex-row rounded-4 p-3" style="margin: auto; background: linear-gradient(90deg, rgba(0,55,0,1) 0%, rgba(0,55,0,0) 100%);">
-                <img src="https://images.pexels.com/photos/4557876/pexels-photo-4557876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center;" class="rounded-start-3">
-                <div class="d-flex flex-column p-5 bg-success-subtle rounded-end-3">
+        <div id="Matuto" class="tabcontent flex-column px-5">
+            <div class="d-flex flex-lg-row flex-column" style="margin: auto; background: linear-gradient(90deg, rgba(0,55,0,1) 0%, rgba(0,55,0,0) 100%);">
+                <img src="https://images.pexels.com/photos/4557876/pexels-photo-4557876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center;">
+                <div class="d-flex flex-column flex-grow-1 p-5 bg-success-subtle rounded-end-3">
                     <h1 class="titleText bg-success py-2 ps-5 rounded-5 display-4" style="letter-spacing: 1px; width: fit-content; padding-right: 30%;">ARTICLE TITLE</h1>
                     <p class="px-sm-4 mx-sm-4 fs-4" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, doloribus. Amet commodi rem ratione voluptas, veniam officia optio, minus eligendi mollitia tempora nemo ducimus fugiat eaque facere. Odio, consequatur alias! <a href="#article" class="fs-4 text-success-emphasis">Basahin</a></p>
                 </div>
             </div>
-            <div class="d-flex flex-row rounded-4 p-3" style="margin: auto; background: linear-gradient(90deg, rgba(0,55,0,1) 0%, rgba(0,55,0,0) 100%);">
-                <img src="https://images.pexels.com/photos/4557876/pexels-photo-4557876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center;" class="rounded-start-3">
+            <div class="d-flex flex-row" style="margin: auto; background: linear-gradient(90deg, rgba(0,55,0,1) 0%, rgba(0,55,0,0) 100%);">
+                <img src="https://images.pexels.com/photos/4557876/pexels-photo-4557876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center;">
                 <div class="d-flex flex-column p-5 bg-success-subtle rounded-end-3">
                     <h1 class="titleText bg-success py-2 ps-5 rounded-5 display-4" style="letter-spacing: 1px; width: fit-content; padding-right: 30%;">ARTICLE TITLE</h1>
                     <p class="px-sm-4 mx-sm-4 fs-4" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, doloribus. Amet commodi rem ratione voluptas, veniam officia optio, minus eligendi mollitia tempora nemo ducimus fugiat eaque facere. Odio, consequatur alias! <a href="#article" class="fs-4 text-success-emphasis">Basahin</a></p>
@@ -147,8 +153,8 @@
                 
                 <!---------------------- MAKIBAKA TAB ---------------------->
         <div id="Makibaka" class="tabcontent">
-            <div class="d-flex flex-row m-5 rounded-4 p-2" style="margin: auto; background: linear-gradient(90deg, rgba(0,55,0,1) 0%, rgba(0,55,0,0) 100%);">
-                <img src="https://images.pexels.com/photos/301987/pexels-photo-301987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center;" class="rounded-start-3">
+            <div class="d-flex flex-row m-5 p-2" style="margin: auto; background: linear-gradient(90deg, rgba(0,55,0,1) 0%, rgba(0,55,0,0) 100%);">
+                <img src="https://images.pexels.com/photos/301987/pexels-photo-301987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center;">
                 <div class="d-flex flex-column p-5 bg-success-subtle rounded-end-3">
                     <h1 class="titleText bg-success py-2 ps-5 rounded-5" style="letter-spacing: 1px; width: fit-content; padding-right: 30%;">ARTICLE TITLE</h1>
                     <p class="px-sm-4 mx-sm-4 fs-5" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, doloribus. Amet commodi rem ratione voluptas, veniam officia optio, minus eligendi mollitia tempora nemo ducimus fugiat eaque facere. Odio, consequatur alias! <a href="#article" class="fs-5 text-success-emphasis">Basahin</a></p>
@@ -158,8 +164,8 @@
 
                 <!---------------------- MAKISAMA TAB ---------------------->
         <div id="Makisama" class="tabcontent">
-            <div class="d-flex flex-row m-5 rounded-4 p-2" style="margin: auto; background: linear-gradient(90deg, rgba(0,55,0,1) 0%, rgba(0,55,0,0) 100%);">
-                <img src="https://images.pexels.com/photos/1963622/pexels-photo-1963622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center;" class="rounded-start-3">
+            <div class="d-flex flex-row m-5 p-2" style="margin: auto; background: linear-gradient(90deg, rgba(0,55,0,1) 0%, rgba(0,55,0,0) 100%);">
+                <img src="https://images.pexels.com/photos/1963622/pexels-photo-1963622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center;">
                 <div class="d-flex flex-column p-5 bg-success-subtle rounded-end-3">
                     <h1 class="titleText bg-success py-2 ps-5 rounded-5" style="letter-spacing: 1px; width: fit-content; padding-right: 30%;">ARTICLE TITLE</h1>
                     <p class="px-sm-4 mx-sm-4 fs-5" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, doloribus. Amet commodi rem ratione voluptas, veniam officia optio, minus eligendi mollitia tempora nemo ducimus fugiat eaque facere. Odio, consequatur alias! <a href="#article" class="fs-5 text-success-emphasis">Basahin</a></p>
