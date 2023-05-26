@@ -74,8 +74,25 @@
         }
     </style>
 
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
 </head>
-<body style="background-image: url(https://images.pexels.com/photos/600114/pexels-photo-600114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); height: 100%; background-position: center; background-size: cover; background-color: rgba(250, 255, 250, 0.875); background-blend-mode: overlay;">
+<body style="background-image: url(https://images.pexels.com/photos/1200225/pexels-photo-1200225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); height: 100%; background-position: center; background-size: cover; background-color: rgba(250, 255, 250, 0.875); background-blend-mode: overlay;">
 
     <!---------------------- NAVBAR ---------------------->
     <nav class="navbar navbar-expand-md navbar-dark nav-underline sticky-top px-5 py-3 navbar-toggler rounded-0" style="background-color: rgb(6, 74, 6);">
@@ -100,19 +117,61 @@
         <div class="d-flex-column mb-5">
             <div class="jumbotron p-5 headlineBg mb-4" style="height: 400px; color: white;">
             </div>
-            <h1 class="display-4 text-center titleText text-success-emphasis" style="letter-spacing: 2px;">Makisama sa pagsulong ng Mental Health!</h1>
+            <h1 class="display-4 text-center titleText text-success-emphasis" style="letter-spacing: 1px;">Makisama sa pagsulong ng Mental Health!</h1>
         </div>
 
-        <h1>Matuto:</h1>
-        <!---------------------- ARTICLES ---------------------->
-        <div class="d-flex flex-row m-5 rounded-4 p-2" style="margin: auto;">
-            <img src="https://images.pexels.com/photos/4557876/pexels-photo-4557876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center; background: linear-gradient(90deg, rgb(0, 77, 0) 0%, rgba(0, 0, 0, 0) 25%);" class="rounded-start-3">
-            <div class="d-flex flex-column p-5 bg-success-subtle rounded-end-3">
-                <h1 class="titleText bg-success py-2 ps-5 rounded-5" style="letter-spacing: 1px; width: fit-content; padding-right: 30%;">ARTICLE TITLE</h1>
-                <p class="px-sm-4 mx-sm-4 fs-5" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, doloribus. Amet commodi rem ratione voluptas, veniam officia optio, minus eligendi mollitia tempora nemo ducimus fugiat eaque facere. Odio, consequatur alias! <a href="#article" class="fs-5 text-success-emphasis">Basahin</a></p>
-
+        <!---------------------- TABS ---------------------->
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Matuto')" id="defaultOpen">Matuto</button>
+            <button class="tablinks" onclick="openTab(event, 'Makibaka')">Makibaka</button>
+            <button class="tablinks" onclick="openTab(event, 'Makisama')">Makisama</button>
+        </div>
+        
+                <!---------------------- MATUTO TAB ---------------------->
+        <div id="Matuto" class="tabcontent d-flex flex-column m-5">
+            <div class="d-flex flex-row rounded-4 p-3" style="margin: auto; background: linear-gradient(90deg, rgba(0,55,0,1) 0%, rgba(0,55,0,0) 100%);">
+                <img src="https://images.pexels.com/photos/4557876/pexels-photo-4557876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center;" class="rounded-start-3">
+                <div class="d-flex flex-column p-5 bg-success-subtle rounded-end-3">
+                    <h1 class="titleText bg-success py-2 ps-5 rounded-5 display-4" style="letter-spacing: 1px; width: fit-content; padding-right: 30%;">ARTICLE TITLE</h1>
+                    <p class="px-sm-4 mx-sm-4 fs-4" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, doloribus. Amet commodi rem ratione voluptas, veniam officia optio, minus eligendi mollitia tempora nemo ducimus fugiat eaque facere. Odio, consequatur alias! <a href="#article" class="fs-4 text-success-emphasis">Basahin</a></p>
+                </div>
+            </div>
+            <div class="d-flex flex-row rounded-4 p-3" style="margin: auto; background: linear-gradient(90deg, rgba(0,55,0,1) 0%, rgba(0,55,0,0) 100%);">
+                <img src="https://images.pexels.com/photos/4557876/pexels-photo-4557876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center;" class="rounded-start-3">
+                <div class="d-flex flex-column p-5 bg-success-subtle rounded-end-3">
+                    <h1 class="titleText bg-success py-2 ps-5 rounded-5 display-4" style="letter-spacing: 1px; width: fit-content; padding-right: 30%;">ARTICLE TITLE</h1>
+                    <p class="px-sm-4 mx-sm-4 fs-4" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, doloribus. Amet commodi rem ratione voluptas, veniam officia optio, minus eligendi mollitia tempora nemo ducimus fugiat eaque facere. Odio, consequatur alias! <a href="#article" class="fs-4 text-success-emphasis">Basahin</a></p>
+                </div>
             </div>
         </div>
+                
+                <!---------------------- MAKIBAKA TAB ---------------------->
+        <div id="Makibaka" class="tabcontent">
+            <div class="d-flex flex-row m-5 rounded-4 p-2" style="margin: auto; background: linear-gradient(90deg, rgba(0,55,0,1) 0%, rgba(0,55,0,0) 100%);">
+                <img src="https://images.pexels.com/photos/301987/pexels-photo-301987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center;" class="rounded-start-3">
+                <div class="d-flex flex-column p-5 bg-success-subtle rounded-end-3">
+                    <h1 class="titleText bg-success py-2 ps-5 rounded-5" style="letter-spacing: 1px; width: fit-content; padding-right: 30%;">ARTICLE TITLE</h1>
+                    <p class="px-sm-4 mx-sm-4 fs-5" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, doloribus. Amet commodi rem ratione voluptas, veniam officia optio, minus eligendi mollitia tempora nemo ducimus fugiat eaque facere. Odio, consequatur alias! <a href="#article" class="fs-5 text-success-emphasis">Basahin</a></p>
+                </div>
+            </div>
+        </div>
+
+                <!---------------------- MAKISAMA TAB ---------------------->
+        <div id="Makisama" class="tabcontent">
+            <div class="d-flex flex-row m-5 rounded-4 p-2" style="margin: auto; background: linear-gradient(90deg, rgba(0,55,0,1) 0%, rgba(0,55,0,0) 100%);">
+                <img src="https://images.pexels.com/photos/1963622/pexels-photo-1963622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center;" class="rounded-start-3">
+                <div class="d-flex flex-column p-5 bg-success-subtle rounded-end-3">
+                    <h1 class="titleText bg-success py-2 ps-5 rounded-5" style="letter-spacing: 1px; width: fit-content; padding-right: 30%;">ARTICLE TITLE</h1>
+                    <p class="px-sm-4 mx-sm-4 fs-5" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, doloribus. Amet commodi rem ratione voluptas, veniam officia optio, minus eligendi mollitia tempora nemo ducimus fugiat eaque facere. Odio, consequatur alias! <a href="#article" class="fs-5 text-success-emphasis">Basahin</a></p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("defaultOpen").click();
+        </script>
+        <!---------------------- ARTICLES ---------------------->
+        
 
         <div class="d-flex flex-column align-items-center mt-0 mb-5 w-100">
             <h1 class="titleText m-5 px-5 py-3 bg-success rounded-5 boxTitle">Latest Stories</h1>

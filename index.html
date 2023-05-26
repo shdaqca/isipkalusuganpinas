@@ -24,7 +24,7 @@
         }
         .headlineBg1::before {    
             content: "";
-            background-color: rgba(54, 70, 54, 0.75);
+            background-color: rgba(54, 70, 54, 0.65);
             background-image: url('https://images.pexels.com/photos/207896/pexels-photo-207896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
             background-blend-mode: overlay;
             position: absolute;
@@ -38,7 +38,7 @@
         }
         .headlineBg2::before {    
             content: "";
-            background-color: rgba(54, 70, 54, 0.75);
+            background-color: rgba(54, 70, 54, 0.65);
             background-image: url('https://images.pexels.com/photos/1181717/pexels-photo-1181717.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
             background-blend-mode: overlay;
             position: absolute;
@@ -52,7 +52,7 @@
         }
         .headlineBg3::before {    
             content: "";
-            background-color: rgba(54, 70, 54, 0.75);
+            background-color: rgba(54, 70, 54, 0.65);
             background-image: url('https://images.pexels.com/photos/3656855/pexels-photo-3656855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
             background-blend-mode: overlay;
             position: absolute;
@@ -67,10 +67,10 @@
         .bgContent {
             position: relative;
         }
-        .card {
+        .cardShadow {
             box-shadow: 2px 6px 8px 0 rgba(22, 50, 22, 0.18);
         }
-        .boxTitle {
+        .boxShadow {
             box-shadow: 2px 6px 8px 0 rgba(22, 50, 22, 0.75);
         }
         .donateBg {
@@ -82,12 +82,9 @@
         }
         .donateBg::before {    
             content: "";
-            background-color: rgba(26, 64, 26, 0.33);
-            background-image: url('https://images.pexels.com/photos/933624/pexels-photo-933624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background: url(https://images.pexels.com/photos/933624/pexels-photo-933624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center no-repeat, linear-gradient(90deg, rgba(26, 64, 26, 0) 15%, rgba(26, 64, 26, 1) 100%);
             background-blend-mode: overlay;
             position: absolute;
-            background-position: center;
-            background-repeat: no-repeat;
             background-size: cover;
             top: 0px;
             right: 0px;
@@ -101,12 +98,11 @@
                 background-repeat: no-repeat;
                 background-size: 75%;
             }
-            
         }
     </style>
 
 </head>
-<body style="background-image: url(https://images.pexels.com/photos/600114/pexels-photo-600114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); height: 100%; background-position: center; background-size: cover; background-color: rgba(250, 255, 250, 0.875); background-blend-mode: overlay;">
+<body style="background-image: url(https://images.pexels.com/photos/1200225/pexels-photo-1200225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); height: 100%; background-position: center; background-size: cover; background-color: rgba(250, 255, 250, 0.875); background-blend-mode: overlay;">
 
     <!---------------------- NAVBAR ---------------------->
     <nav class="navbar navbar-expand-md navbar-dark nav-underline sticky-top px-5 py-3 navbar-toggler rounded-0" style="background-color: rgb(6, 74, 6);">
@@ -128,12 +124,12 @@
     <main class="d-flex flex-column">
 
         <!---------------------- HERO ---------------------->
-        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item">
-                    <div class="d-flex mb-5">
+                    <div class="d-flex">
                         <div class="jumbotron p-5 headlineBg headlineBg1" style="height: 700px; color: white;">
-                            <div class="bgContent p-md-5 m-sm-5 mt-sm-1 rounded-5 p-4" style="background-color: rgb(3, 99, 3, 0.75);">
+                            <div class="bgContent p-md-5 m-sm-5 mt-sm-1 rounded-5 p-4 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
                                 <h1 class="display-1 titleText">Kaya mo 'yan!</h1>
                                 <p class="lead pe-5 me-5 " style="text-align: justify; font-size: calc(4 * sqrt(vw));">Saan ka man naroroon, may pag-asa pa rin. Walang masamang tumanggap ng tulong. Kung nakakaranas ng kalungkutan, kakayanin mo rin ang ligaya.</p>
                                 <hr class="my-4 fs-6">
@@ -146,9 +142,9 @@
                     </div>
                 </div>
                 <div class="carousel-item active">
-                    <div class="d-flex mb-5">
+                    <div class="d-flex">
                         <div class="jumbotron p-5 headlineBg headlineBg2" style="height: 700px; color: white;">
-                            <div class="bgContent p-md-5 m-sm-5 mt-sm-1 rounded-5 p-4" style="background-color: rgb(3, 99, 3, 0.75);">
+                            <div class="bgContent p-md-5 m-sm-5 mt-sm-1 rounded-5 p-4 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
                                 <h1 class="display-1 titleText">Kumusta ka?</h1>
                                 <p class="lead pe-5 me-5 " style="text-align: justify; font-size: calc(4 * sqrt(vw));">Sa hirap ng buhay, magtitiis tayo, kailangan may lakas ng loob at sigla. Huwag magbago ng pangarap dahil sa mga hamon ng buhay. Dahil ikaw ay importante, sumama sa amin, kumusta?</p>
                                 <hr class="my-4 fs-6">
@@ -161,9 +157,9 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="d-flex mb-5">
+                    <div class="d-flex">
                         <div class="jumbotron p-5 headlineBg headlineBg3" style="height: 700px; color: white;">
-                            <div class="bgContent p-md-5 m-sm-5 mt-sm-1 rounded-5 p-4" style="background-color: rgb(3, 99, 3, 0.75);">
+                            <div class="bgContent p-md-5 m-sm-5 mt-sm-1 rounded-5 p-4 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
                                 <h1 class="display-1 titleText">Natatakot ka ba?</h1>
                                 <p class="lead pe-5 me-5 " style="text-align: justify; font-size: calc(4 * sqrt(vw));">Walang imposible sa mga gustong magtagumpay. Sa bawat kasawian, mayroong pag-asa. Huwag matakot sumabak sa mga bagong hamon. Tumayo sa pag-abot ng mga pangarap.</p>
                                 <hr class="my-4 fs-6">
@@ -176,11 +172,11 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev" style="background: linear-gradient(90deg, rgba(0,25,0,0.5) 0%, rgba(0,0,0,0) 100%);">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next" style="background: linear-gradient(270deg, rgba(0,25,0,0.5) 0%, rgba(0,0,0,0) 100%);">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -189,11 +185,11 @@
         
         <!---------------------- ARTICLE ---------------------->
         <div class="d-flex flex-column align-items-center mt-0 mb-4 w-100">
-            <h1 class="titleText m-5 px-5 py-3 bg-success rounded-5 boxTitle">Latest Stories</h1>
+            <h1 class="titleText m-5 px-5 py-3 bg-success rounded-5 boxShadow">Latest Stories</h1>
             <div class="container mb-3">
                 <div class="row g-4">
                     <div class="col-lg-3 col-md-6 col-auto d-flex align-items-stretch">
-                        <div class="card">
+                        <div class="card cardShadow">
                             <img src="https://images.pexels.com/photos/3978594/pexels-photo-3978594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top">
                             <div class="card-body d-flex flex-column justify-content-between">
                                 <h5 class="card-title">Kaya mo 'yan!</h5>
@@ -203,7 +199,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-auto d-flex align-items-stretch">
-                        <div class="card">
+                        <div class="card cardShadow">
                             <img src="https://images.pexels.com/photos/2821823/pexels-photo-2821823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top">
                             <div class="card-body d-flex flex-column justify-content-between">
                                 <h5 class="card-title">Break na tayo.</h5>
@@ -213,7 +209,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-auto d-flex align-items-stretch">
-                        <div class="card">
+                        <div class="card cardShadow">
                             <img src="https://images.pexels.com/photos/935977/pexels-photo-935977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top">
                             <div class="card-body d-flex flex-column justify-content-between">
                                 <h5 class="card-title">Masaya ka ba?</h5>
@@ -223,7 +219,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-auto d-flex align-items-stretch">
-                        <div class="card">
+                        <div class="card cardShadow">
                             <img src="https://images.pexels.com/photos/40751/running-runner-long-distance-fitness-40751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top">
                             <div class="card-body d-flex flex-column justify-content-between">
                                 <h5 class="card-title">Tara na!</h5>
@@ -241,7 +237,7 @@
         <div class="d-flex">
             <div class="d-flex justify-content-lg-between justify-content-center mt-5 donateBg" style="height: 700px; color: white; background-color: rgb(26, 64, 26);">
                 <div></div>
-                <div class="flex-lg-grow-0 flex-grow-1 w-50 bgContent p-lg-5 m-5 mt-sm-1 rounded-5 p-4" style="background-color: rgb(3, 99, 3, 0.75);">
+                <div class="flex-lg-grow-0 flex-grow-1 w-50 bgContent p-lg-5 m-5 mt-sm-1 rounded-5 p-4 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
                     <h1 class="display-1 titleText">Kaya mo ba?</h1>
                     <p class="lead fs-5" style="text-align: justify;">Huwag mong ikahiya ang paghingi ng tulong. Pag-ibig para sa sarili ay importante. Magpakatatag sa kabila ng hirap.</p>
                     <hr class="my-4 fs-6">
