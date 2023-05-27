@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <title>Isip-Kalusugan Pinas</title>
+    <title>News & Events</title>
 
     <style>
         * {
@@ -22,38 +22,10 @@
             align-items: center;
             justify-content: center;
         }
-        .headlineBg1::before {    
+        .headlineBg::before {    
             content: "";
             background-color: rgba(54, 70, 54, 0.65);
-            background-image: url('https://images.pexels.com/photos/207896/pexels-photo-207896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-            background-blend-mode: overlay;
-            position: absolute;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            top: 0px;
-            right: 0px;
-            bottom: 0px;
-            left: 0px;
-        }
-        .headlineBg2::before {    
-            content: "";
-            background-color: rgba(54, 70, 54, 0.65);
-            background-image: url('https://images.pexels.com/photos/1181717/pexels-photo-1181717.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-            background-blend-mode: overlay;
-            position: absolute;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            top: 0px;
-            right: 0px;
-            bottom: 0px;
-            left: 0px;
-        }
-        .headlineBg3::before {    
-            content: "";
-            background-color: rgba(54, 70, 54, 0.65);
-            background-image: url('https://images.pexels.com/photos/3656855/pexels-photo-3656855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-image: url('https://images.pexels.com/photos/40751/running-runner-long-distance-fitness-40751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
             background-blend-mode: overlay;
             position: absolute;
             background-position: center;
@@ -115,7 +87,7 @@
                 <a class="nav-item nav-link" href="about.html">About</a>
                 <a class="nav-item nav-link" href="getinvolved.html">Get Involved</a>
                 <a class="nav-item nav-link" href="#Services">Services</a>
-                <a class="nav-item nav-link" href="news-events.html">News & Events</a>
+                <a class="nav-item nav-link active" href="news-events.html">News & Events</a>
                 <a class="nav-item nav-link" href="#Donate"><b>Donate Now!</b></a>
             </div>
         </div>
@@ -123,65 +95,14 @@
 
     <main class="d-flex flex-column">
 
-        <!---------------------- HERO ---------------------->
-        <div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item">
-                    <div class="d-flex">
-                        <div class="jumbotron p-5 headlineBg headlineBg1" style="height: 700px; color: white;">
-                            <div class="bgContent p-md-5 m-sm-5 mt-sm-1 rounded-5 p-4 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
-                                <h1 class="display-1 titleText">Kaya mo 'yan!</h1>
-                                <p class="lead pe-5 me-5 " style="text-align: justify; font-size: calc(4 * sqrt(vw));">Saan ka man naroroon, may pag-asa pa rin. Walang masamang tumanggap ng tulong. Kung nakakaranas ng kalungkutan, kakayanin mo rin ang ligaya.</p>
-                                <hr class="my-4 fs-6">
-                                <p>Magiging maayos din ang lahat. Huwag matakot na magsimula muli. Sali na!</p>
-                                <p class="lead">
-                                    <a class="btn btn-success btn-lg" href="#article" role="button">Basahin ang Story</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item active">
-                    <div class="d-flex">
-                        <div class="jumbotron p-5 headlineBg headlineBg2" style="height: 700px; color: white;">
-                            <div class="bgContent p-md-5 m-sm-5 mt-sm-1 rounded-5 p-4 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
-                                <h1 class="display-1 titleText">Kumusta ka?</h1>
-                                <p class="lead pe-5 me-5 " style="text-align: justify; font-size: calc(4 * sqrt(vw));">Sa hirap ng buhay, magtitiis tayo, kailangan may lakas ng loob at sigla. Huwag magbago ng pangarap dahil sa mga hamon ng buhay. Dahil ikaw ay importante, sumama sa amin, kumusta?</p>
-                                <hr class="my-4 fs-6">
-                                <p>Sana'y makatulong ang ating mga salita sa tagumpay ng kapwa.</p>
-                                <p class="lead">
-                                    <a class="btn btn-success btn-lg" href="#article" role="button">Basahin ang Story</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex">
-                        <div class="jumbotron p-5 headlineBg headlineBg3" style="height: 700px; color: white;">
-                            <div class="bgContent p-md-5 m-sm-5 mt-sm-1 rounded-5 p-4 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
-                                <h1 class="display-1 titleText">Natatakot ka ba?</h1>
-                                <p class="lead pe-5 me-5 " style="text-align: justify; font-size: calc(4 * sqrt(vw));">Walang imposible sa mga gustong magtagumpay. Sa bawat kasawian, mayroong pag-asa. Huwag matakot sumabak sa mga bagong hamon. Tumayo sa pag-abot ng mga pangarap.</p>
-                                <hr class="my-4 fs-6">
-                                <p>Kapag hindi mo na alam ang susunod, tumingin sa mga kanan at kaliwa, makakahanap ka ng gabay.</p>
-                                <p class="lead">
-                                    <a class="btn btn-success btn-lg" href="#article" role="button">Basahin ang Story</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!---------------------- HEADLINE ---------------------->
+        <div class="jumbotron d-flex flex-row headlineBg p-5" style="height: 600px;">
+            <img src="https://images.pexels.com/photos/40751/running-runner-long-distance-fitness-40751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="bgContent" style="max-width: 50%;">
+            <div class="d-flex flex-column bgContent flex-grow- 1 m-5">
+                <h1 class="bg-success display-4 titleText py-3 ps-4 pe-5" style="letter-spacing: 1px;">Tara na!</h1>
+                <p class="bg-success-subtle p-5 fs-5">Basahin ang latest na blog tungkol sa <span class="fst-italic">depression</span> at <span class="fst-italic">motivation</span>. Kung hindi ngayon, kailan pa? Kung hindi dito, saan pa? Mayroon kang kakayahan sa bawat bagay. <a href="#article" class="fs-5 text-success-emphasis">Basahin</a></p>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev" style="background: linear-gradient(90deg, rgba(0,25,0,0.5) 0%, rgba(0,0,0,0) 100%);">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next" style="background: linear-gradient(270deg, rgba(0,25,0,0.5) 0%, rgba(0,0,0,0) 100%);">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-        
         
         <!---------------------- ARTICLE ---------------------->
         <div class="d-flex flex-column align-items-center mt-0 mb-4 w-100">
