@@ -52,8 +52,11 @@
         .card {
             box-shadow: 2px 6px 8px 0 rgba(22, 50, 22, 0.18);
         }
-        .boxTitle {
+        .boxShadow {
             box-shadow: 2px 6px 8px 0 rgba(22, 50, 22, 0.75);
+        }
+        .divShadow {
+            box-shadow: 0 4px 8px 0 rgba(22, 50, 22, 0.5), 0 -4px 8px 0 rgba(22, 50, 22, 0.75);
         }
         .donateBg {
             position: relative; 
@@ -91,7 +94,7 @@
 <body style="background: url(https://images.pexels.com/photos/1200225/pexels-photo-1200225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center no-repeat, linear-gradient(180deg, rgb(255, 255, 255) 12.5%, rgba(250, 255, 250, 0.875) 18.5%); background-size: cover; background-blend-mode: overlay;">
 
     <!---------------------- NAVBAR ---------------------->
-    <nav class="navbar navbar-expand-md navbar-dark nav-underline sticky-top px-5 py-3 navbar-toggler rounded-0" style="background-color: rgb(6, 74, 6);">
+    <nav class="navbar navbar-expand-md navbar-dark nav-underline sticky-top px-5 py-3 navbar-toggler rounded-0 divShadow" style="background-color: rgb(6, 74, 6);">
         <a class="navbar-brand fs-3 titleText" href="index.html">Isip-Kalusugan Pinas</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapsed">
             <span class="navbar-toggler-icon"></span>
@@ -110,13 +113,13 @@
     <main class="d-flex flex-column">
 
         <!---------------------- INTRO ---------------------->
-        <h1 class="display-4 text-success-emphasis titleText text-center w-100 px-5 pb-2" style="margin-top:11.5%;">Saan mang sulok ng mundo, mayroong <span class="display-4 text-success-emphasis bg-success px-2 titleText ">pag-asa</span>.</h1>
+        <h1 class="display-4 text-success-emphasis titleText text-center w-100 px-5 pb-2" style="margin-top:11.5%;">Saan mang sulok ng mundo, mayroong <span class="display-4 text-success-emphasis bg-success px-2 titleText">pag-asa</span>.</h1>
         <p class="fs-5 fw-light text-black text-center px-md-5 pt-md-4 pb-5" style="margin-bottom: 11.75%; margin-left: auto; margin-right: auto; width: 60%;">Hindi mo alam ang kayang gawin ng iyong kakayahan hangga't hindi mo itinutuloy. Kapag nananampalataya ka sa iyong sarili, magkakatotoo ang mga pangarap mo. Ang pangarap ay kayang mapaabot, sa isang taong tunay na naniniwala at lumalaban. Kasama sa pag-abot ng tagumpay ay sa pagsapit ng mga hamon. Huwag naniniwala sa sarili? Subukan ang patuloy na pagnanais sa pagsulong ng mga pangarap. Hindi tayo magtatagumpay kung hindi tayo may lakas ng loob. Isang daang hakbang ang magagawa, <span class="fs-5 fw-light" style="color: darkgreen;">huwag lang titigil</span>.<br><i class="arrow down mt-5"></i></p>
 
         <!---------------------- JUMBOTRON ---------------------->
-        <div class="d-flex mb-5">
-            <div class="jumbotron p-5 jumboBg" style="height: 700px; color: white; border-top: 5px solid rgb(6, 74, 6); border-bottom: 5px solid rgb(6, 74, 6);">
-                <div class="bgContent p-md-5 m-sm-5 mt-sm-1 rounded-5 p-4" style="background-color: rgb(3, 99, 3, 0.75);">
+        <div class="d-flex mb-5 divShadow">
+            <div class="jumbotron p-5 jumboBg" style="height: 700px; color: white;">
+                <div class="bgContent p-md-5 m-sm-5 mt-sm-1 rounded-5 p-4 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
                     <h1 class="display-1 titleText">Ano ang Mental Health?</h1>
                     <p class="lead px-sm-4 mx-sm-4 fs-5" style="text-align: justify;">Kapag sa iyo'y umapaw ang kalungkutan, dito ka sa amin, ating pag-usapan. Sa hirap ng buhay, magtitiis tayo, kailangan may lakas ng loob at sigla. Huwag magbago ng pangarap dahil sa mga hamon ng buhay. Dahil ikaw ay importante, sumama sa amin, kumusta? Hindi hadlang ang problema upang hindi maabot ang tagumpay. Gamitin ang iyong kaligayahan upang magbigay ng inspirasyon sa iba. Sana'y makatulong ang ating mga salita sa tagumpay ng kapwa. Sa bawat problema, may kaakibat na solusyon.</p>
                     <hr class="my-4 fs-6">
@@ -169,7 +172,7 @@
 
 
         <div class="d-flex flex-column align-items-center mt-0 mb-5 w-100">
-            <h1 class="titleText m-5 px-5 py-3 bg-success rounded-5 boxTitle">Latest News</h1>
+            <h1 class="titleText m-5 px-5 py-3 bg-success rounded-5 boxShadow">Latest News</h1>
             <div class="container mb-3">
                 <div class="row g-4">
                     <div class="col-lg-3 col-md-6 col-auto d-flex align-items-stretch">
