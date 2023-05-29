@@ -64,8 +64,8 @@
         }
         .donateBg::before {    
             content: "";
-            background-color: rgba(26, 64, 26, 0.33);
-            background-image: url('https://images.pexels.com/photos/4051134/pexels-photo-4051134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-color: rgba(54, 70, 54, 0.75);
+            background-image: url('https://images.pexels.com/photos/339620/pexels-photo-339620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
             background-blend-mode: overlay;
             position: absolute;
             background-position: center;
@@ -76,33 +76,7 @@
             bottom: 0px;
             left: 0px;
         }
-        @media (min-width: 1200px) {
-            .donateBg::before {
-                background-position: left;
-                margin-left: 5%;
-                background-repeat: no-repeat;
-                background-size: 75%;
-            }
-        }
     </style>
-
-    <script>
-        function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(tabName).style.display = "flex";
-            evt.currentTarget.className += " active";
-        }
-    </script>
-
 </head>
 <body style="background-image: url(https://images.pexels.com/photos/1200225/pexels-photo-1200225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); height: 100%; background-position: center; background-size: cover; background-color: rgba(250, 255, 250, 0.875); background-blend-mode: overlay;">
 
@@ -128,28 +102,14 @@
         <!---------------------- HEADER ---------------------->
         <div class="d-flex-column mb-5">
             <div class="jumbotron p-5 headlineBg mb-4 divShadow" style="height: 400px;"></div>
-            <h1 class="display-4 text-center titleText text-success-emphasis" style="letter-spacing: 1px;">Sumama sa pagsulong ng Mental Health!</h1>
+            <h1 class="display-4 text-center titleText text-success-emphasis" style="letter-spacing: 1px;">Matuto tungkol sa Mental Health!</h1>
         </div>
 
         
-
-        <!---------------------- TABS ---------------------->
-        <ul class="nav nav-tabs align-self-center">
-            <li class="nav-item">
-                <a class="nav-link tablinks text-success-emphasis" style="cursor: pointer;" onclick="openTab(event, 'Matuto')" id="defaultOpen">Matuto</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link tablinks text-success-emphasis" style="cursor: pointer;" onclick="openTab(event, 'Makibaka')">Makibaka</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link tablinks text-success-emphasis" style="cursor: pointer;" onclick="openTab(event, 'Makisama')">Makisama</a>
-            </li>
-        </ul>
-        
+        <!---------------------- ARTICLES ---------------------->
         <div class="d-flex flex-row" style="margin-right: 5%; margin-left: 5%;">
 
-                <!---------------------- MATUTO TAB ---------------------->
-            <div id="Matuto" class="tabcontent flex-column me-3" style="width: 175%">
+            <div class="d-flex flex-column me-3" style="width: 175%">
                 <div class="d-flex flex-lg-row flex-column mb-3 boxShadow" style="height: 250px; background: linear-gradient(90deg, rgb(126, 192, 126, 0) 50%, rgba(126, 192, 126, 1) 100%);">
                     <img src="https://images.pexels.com/photos/1623536/pexels-photo-1623536.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center; border: 1px solid rgb(0, 50, 0);">
                     <div class="d-flex flex-column flex-grow-1 p-3 rounded-end-3">
@@ -185,83 +145,14 @@
                         <p class="mx-sm-4" style="text-align: justify; font-size: 18px">Basta't kasama ang pamilya, sapat na. Bago bigyan ng iba, unahin mo muna ang sarili. Lahat ng kinamumuhian mo ay nabuo sa iyong isip lamang. Magiging maayos din ang lahat. Huwag matakot na magsimula muli. Hindi ka nag-iisa sa laban na ito. <a href="#article" style="font-size: 18px; text-decoration: none; color: rgb(0, 75, 0)">Basahin <i class="arrow right"></i></a></p>
                     </div>
                 </div>
-            </div>
-                    
-                    <!---------------------- MAKIBAKA TAB ---------------------->
-            <div id="Makibaka" class="tabcontent flex-column me-3" style="width: 175%">
-                <div class="d-flex flex-lg-row flex-column mb-3 boxShadow" style="height: 250px; background: linear-gradient(90deg, rgb(126, 192, 126, 0) 50%, rgba(126, 192, 126, 1) 100%);">
-                    <img src="https://images.pexels.com/photos/207896/pexels-photo-207896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center; border: 1px solid rgb(0, 50, 0);">
-                    <div class="d-flex flex-column flex-grow-1 p-3 rounded-end-3">
-                        <h2 class="titleText bg-success py-2 ps-4 rounded-5 boxShadow" style="letter-spacing: 1px; width: fit-content; width: 70%;">Kaya mo 'yan!</h2>
-                        <p class="mx-sm-4" style="text-align: justify; font-size: 18px">Saan ka man naroroon, may pag-asa pa rin. Walang masamang tumanggap ng tulong. Kung nakakaranas ng kalungkutan, kakayanin mo rin ang ligaya. Magiging maayos din ang lahat. Huwag matakot na magsimula muli. <a href="#article" style="font-size: 18px; text-decoration: none; color: rgb(0, 75, 0)">Basahin <i class="arrow right"></i></a></p>
-                    </div>
-                </div>
-                <div class="d-flex flex-lg-row flex-column mb-3 boxShadow" style="height: 250px; background: linear-gradient(90deg, rgb(126, 192, 126, 0) 50%, rgba(126, 192, 126, 1) 100%);">
-                    <img src="https://images.pexels.com/photos/4689310/pexels-photo-4689310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center; border: 1px solid rgb(0, 50, 0);">
-                    <div class="d-flex flex-column flex-grow-1 p-3 rounded-end-3">
-                        <h2 class="titleText bg-success py-2 ps-4 rounded-5 boxShadow" style="letter-spacing: 1px; width: fit-content; width: 70%;">Kumusta si Anak?</h2>
-                        <p class="mx-sm-4" style="text-align: justify; font-size: 18px">Basta't kasama ang pamilya, sapat na. Bago bigyan ng iba, unahin mo muna ang sarili. Lahat ng kinamumuhian mo ay nabuo sa iyong isip lamang. Magiging maayos din ang lahat. Huwag matakot na magsimula muli. Hindi ka nag-iisa sa laban na ito. <a href="#article" style="font-size: 18px; text-decoration: none; color: rgb(0, 75, 0)">Basahin <i class="arrow right"></i></a></p>
-                    </div>
-                </div>
-                <div class="d-flex flex-lg-row flex-column mb-3 boxShadow" style="height: 250px; background: linear-gradient(90deg, rgb(126, 192, 126, 0) 50%, rgba(126, 192, 126, 1) 100%);">
-                    <img src="https://images.pexels.com/photos/4098224/pexels-photo-4098224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center; border: 1px solid rgb(0, 50, 0);">
-                    <div class="d-flex flex-column flex-grow-1 p-3 rounded-end-3">
-                        <h2 class="titleText bg-success py-2 ps-4 rounded-5 boxShadow" style="letter-spacing: 1px; width: fit-content; width: 70%;">Ano ang Therapy?</h2>
-                        <p class="mx-sm-4" style="text-align: justify; font-size: 18px">Magpakatatag sa kabila ng hirap. Saan ka man naroroon, may pag-asa pa rin. Walang masamang tumanggap ng tulong. Kung nakakaranas ng kalungkutan, kakayanin mo rin ang ligaya. Basta't kasama ang pamilya, sapat na. Bago bigyan ng iba, unahin mo muna ang sarili. <a href="#article" style="font-size: 18px; text-decoration: none; color: rgb(0, 75, 0)">Basahin <i class="arrow right"></i></a></p>
-                    </div>
-                </div>
-                <div class="d-flex flex-lg-row flex-column mb-3 boxShadow" style="height: 250px; background: linear-gradient(90deg, rgb(126, 192, 126, 0) 50%, rgba(126, 192, 126, 1) 100%);">
-                    <img src="https://images.pexels.com/photos/3656855/pexels-photo-3656855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center; border: 1px solid rgb(0, 50, 0);">
-                    <div class="d-flex flex-column flex-grow-1 p-3 rounded-end-3">
-                        <h2 class="titleText bg-success py-2 ps-4 rounded-5 boxShadow" style="letter-spacing: 1px; width: fit-content; width: 70%;">Natatakot ka ba?</h2>
-                        <p class="mx-sm-4" style="text-align: justify; font-size: 18px">Walang imposible sa mga gustong magtagumpay. Sa bawat kasawian, mayroong pag-asa. Huwag matakot sumabak sa mga bagong hamon. Tumayo sa pag-abot ng mga pangarap. Kapag hindi mo na alam ang susunod, tumingin sa mga kanan at kaliwa, makakahanap ka ng gabay. <a href="#article" style="font-size: 18px; text-decoration: none; color: rgb(0, 75, 0)">Basahin <i class="arrow right"></i></a></p>
-                    </div>
-                </div>
-                <div class="d-flex flex-lg-row flex-column mb-3 boxShadow" style="height: 250px; background: linear-gradient(90deg, rgb(126, 192, 126, 0) 50%, rgba(126, 192, 126, 1) 100%);">
-                    <img src="https://images.pexels.com/photos/1181717/pexels-photo-1181717.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center; border: 1px solid rgb(0, 50, 0);">
-                    <div class="d-flex flex-column flex-grow-1 p-3 rounded-end-3">
-                        <h2 class="titleText bg-success py-2 ps-4 rounded-5 boxShadow" style="letter-spacing: 1px; width: fit-content; width: 70%;">Kumusta ka?</h2>
-                        <p class="mx-sm-4" style="text-align: justify; font-size: 18px">Sa hirap ng buhay, magtitiis tayo, kailangan may lakas ng loob at sigla. Huwag magbago ng pangarap dahil sa mga hamon ng buhay. Dahil ikaw ay importante, sumama sa amin, kumusta? Sana'y makatulong ang ating mga salita sa tagumpay ng kapwa. <a href="#article" style="font-size: 18px; text-decoration: none; color: rgb(0, 75, 0)">Basahin <i class="arrow right"></i></a></p>
-                    </div>
-                </div>
-            </div>
 
-                    <!---------------------- MAKISAMA TAB ---------------------->
-            <div id="Makisama" class="tabcontent flex-column me-3" style="width: 175%">
-                <div class="d-flex flex-lg-row flex-column mb-3 boxShadow" style="height: 250px; background: linear-gradient(90deg, rgb(126, 192, 126, 0) 50%, rgba(126, 192, 126, 1) 100%);">
-                    <img src="https://images.pexels.com/photos/1181717/pexels-photo-1181717.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center; border: 1px solid rgb(0, 50, 0);">
-                    <div class="d-flex flex-column flex-grow-1 p-3 rounded-end-3">
-                        <h2 class="titleText bg-success py-2 ps-4 rounded-5 boxShadow" style="letter-spacing: 1px; width: fit-content; width: 70%;">Kumusta ka?</h2>
-                        <p class="mx-sm-4" style="text-align: justify; font-size: 18px">Sa hirap ng buhay, magtitiis tayo, kailangan may lakas ng loob at sigla. Huwag magbago ng pangarap dahil sa mga hamon ng buhay. Dahil ikaw ay importante, sumama sa amin, kumusta? Sana'y makatulong ang ating mga salita sa tagumpay ng kapwa. <a href="#article" style="font-size: 18px; text-decoration: none; color: rgb(0, 75, 0)">Basahin <i class="arrow right"></i></a></p>
-                    </div>
-                </div>
-                <div class="d-flex flex-lg-row flex-column mb-3 boxShadow" style="height: 250px; background: linear-gradient(90deg, rgb(126, 192, 126, 0) 50%, rgba(126, 192, 126, 1) 100%);">
-                    <img src="https://images.pexels.com/photos/4557876/pexels-photo-4557876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center; border: 1px solid rgb(0, 50, 0);">
-                    <div class="d-flex flex-column flex-grow-1 p-3 rounded-end-3">
-                        <h2 class="titleText bg-success py-2 ps-4 rounded-5 boxShadow" style="letter-spacing: 1px; width: fit-content; width: 70%;">Humingi ng Tulong</h2>
-                        <p class="mx-sm-4" style="text-align: justify; font-size: 18px">Magpakatatag sa kabila ng hirap. Saan ka man naroroon, may pag-asa pa rin. Walang masamang tumanggap ng tulong. Kung nakakaranas ng kalungkutan, kakayanin mo rin ang ligaya. Basta't kasama ang pamilya, sapat na. Bago bigyan ng iba, unahin mo muna ang sarili. <a href="#article" style="font-size: 18px; text-decoration: none; color: rgb(0, 75, 0)">Basahin <i class="arrow right"></i></a></p>
-                    </div>
-                </div>
-                <div class="d-flex flex-lg-row flex-column mb-3 boxShadow" style="height: 250px; background: linear-gradient(90deg, rgb(126, 192, 126, 0) 50%, rgba(126, 192, 126, 1) 100%);">
-                    <img src="https://images.pexels.com/photos/207896/pexels-photo-207896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center; border: 1px solid rgb(0, 50, 0);">
-                    <div class="d-flex flex-column flex-grow-1 p-3 rounded-end-3">
-                        <h2 class="titleText bg-success py-2 ps-4 rounded-5 boxShadow" style="letter-spacing: 1px; width: fit-content; width: 70%;">Kaya mo 'yan!</h2>
-                        <p class="mx-sm-4" style="text-align: justify; font-size: 18px">Saan ka man naroroon, may pag-asa pa rin. Walang masamang tumanggap ng tulong. Kung nakakaranas ng kalungkutan, kakayanin mo rin ang ligaya. Magiging maayos din ang lahat. Huwag matakot na magsimula muli. <a href="#article" style="font-size: 18px; text-decoration: none; color: rgb(0, 75, 0)">Basahin <i class="arrow right"></i></a></p>
-                    </div>
-                </div>
-                <div class="d-flex flex-lg-row flex-column mb-3 boxShadow" style="height: 250px; background: linear-gradient(90deg, rgb(126, 192, 126, 0) 50%, rgba(126, 192, 126, 1) 100%);">
-                    <img src="https://images.pexels.com/photos/4689310/pexels-photo-4689310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center; border: 1px solid rgb(0, 50, 0);">
-                    <div class="d-flex flex-column flex-grow-1 p-3 rounded-end-3">
-                        <h2 class="titleText bg-success py-2 ps-4 rounded-5 boxShadow" style="letter-spacing: 1px; width: fit-content; width: 70%;">Kumusta si Anak?</h2>
-                        <p class="mx-sm-4" style="text-align: justify; font-size: 18px">Basta't kasama ang pamilya, sapat na. Bago bigyan ng iba, unahin mo muna ang sarili. Lahat ng kinamumuhian mo ay nabuo sa iyong isip lamang. Magiging maayos din ang lahat. Huwag matakot na magsimula muli. Hindi ka nag-iisa sa laban na ito. <a href="#article" style="font-size: 18px; text-decoration: none; color: rgb(0, 75, 0)">Basahin <i class="arrow right"></i></a></p>
-                    </div>
-                </div>
-                <div class="d-flex flex-lg-row flex-column mb-3 boxShadow" style="height: 250px; background: linear-gradient(90deg, rgb(126, 192, 126, 0) 50%, rgba(126, 192, 126, 1) 100%);">
-                    <img src="https://images.pexels.com/photos/1623536/pexels-photo-1623536.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 300px; height: auto; object-fit: cover; object-position: center; border: 1px solid rgb(0, 50, 0);">
-                    <div class="d-flex flex-column flex-grow-1 p-3 rounded-end-3">
-                        <h2 class="titleText bg-success py-2 ps-4 rounded-5 boxShadow" style="letter-spacing: 1px; width: fit-content; width: 70%;">Mental Health?</h2>
-                        <p class="mx-sm-4" style="text-align: justify; font-size: 18px">Kapag sa iyo'y umapaw ang kalungkutan, dito ka sa amin, ating pag-usapan. Sa hirap ng buhay, magtitiis tayo, kailangan may lakas ng loob at sigla. Hindi hadlang ang problema upang hindi maabot ang tagumpay. Gamitin ang iyong kaligayahan upang magbigay ng inspirasyon sa iba. <a href="#article" style="font-size: 18px; text-decoration: none; color: rgb(0, 75, 0)">Basahin <i class="arrow right"></i></a></p>
-                    </div>
+                <div class="d-flex flex-row align-self-end justify-content-between w-25" style="margin-right: 10%;">
+                    <a href="#prev-page" style="text-decoration: none;" class="text-success-emphasis">1</a>
+                    <a href="#prev-page" style="text-decoration: none;" class="text-success-emphasis">2</a>
+                    <a href="#prev-page" style="text-decoration: none;" class="text-success-emphasis">3</a>
+                    <a href="#prev-page" style="text-decoration: none;" class="text-success-emphasis">4</a>
+                    <a href="#prev-page" style="text-decoration: none;" class="text-success-emphasis">5</a>
+                    <a href="#next-page" class="text-success-emphasis" style="text-decoration: none;">Next Page -></a>
                 </div>
             </div>
             
@@ -277,79 +168,80 @@
 
         </div>
 
-        <script>
-            document.getElementById("defaultOpen").click();
-        </script>
-        <!---------------------- ARTICLES ---------------------->
-        
 
-        <div class="d-flex flex-column align-items-center mt-0 mb-5 w-100">
-            <h1 class="titleText m-5 px-5 py-3 bg-success rounded-5 boxShadow">Latest Stories</h1>
+        <!---------------------- EVENTS ---------------------->
+        <div class="d-flex flex-column align-items-center mb-5 w-100" style="margin-top: 7%">
+            <h1 class="titleText m-5 px-5 py-3 bg-success rounded-5 boxShadow">Mga Events</h1>
             <div class="container mb-3">
                 <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 col-auto d-flex align-items-stretch">
+                    <div class="col-md-6 col-auto d-flex align-items-stretch">
                         <div class="card">
                             <img src="https://images.pexels.com/photos/3978594/pexels-photo-3978594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top">
                             <div class="card-body d-flex flex-column justify-content-between">
                                 <h5 class="card-title">Kaya mo 'yan!</h5>
-                                <p class="card-text flex-grow-1">Saan ka ma'il dalhin ng mga suliranin, kaya mo itong lampasan. Walang perpektong buhay, kaya huwag na maghanap.</p>
-                                <a href="#" class="btn btn-success" style="width:fit-content;">Basahin ang Story</a>
+                                <p class="card-text flex-grow-1">Saan ka ma'il dalhin ng mga suliranin, kaya mo itong lampasan. Walang perpektong buhay, kaya huwag na maghanap. <a href="#article" style="text-decoration: none; color: rgb(0, 75, 0)">Basahin <i class="arrow right"></i></a></p>
                             </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="background-color: rgb(155, 231, 155);">Event Date: June 1, 2023</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-auto d-flex align-items-stretch">
+                    <div class="col-md-6 col-auto d-flex align-items-stretch">
                         <div class="card">
                             <img src="https://images.pexels.com/photos/2821823/pexels-photo-2821823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top">
                             <div class="card-body d-flex flex-column justify-content-between">
                                 <h5 class="card-title">Break na tayo.</h5>
-                                <p class="card-text flex-grow-1">Ang pag-ibig ay hindi nag-iisa. Ang pagsama sama ay makakatulong sa pagkakaroon ng malusog na kaisipan.</p>
-                                <a href="#" class="btn btn-success" style="width:fit-content;">Basahin ang Story</a>
+                                <p class="card-text flex-grow-1">Ang pag-ibig ay hindi nag-iisa. Ang pagsama sama ay makakatulong sa pagkakaroon ng malusog na kaisipan. <a href="#article" style="text-decoration: none; color: rgb(0, 75, 0)">Basahin <i class="arrow right"></i></a></p>
                             </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="background-color: rgb(155, 231, 155);">Event Date: June 29, 2023</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-auto d-flex align-items-stretch">
+                    <div class="col-md-6 col-auto d-flex align-items-stretch">
                         <div class="card">
                             <img src="https://images.pexels.com/photos/935977/pexels-photo-935977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top">
                             <div class="card-body d-flex flex-column justify-content-between">
                                 <h5 class="card-title">Masaya ka ba?</h5>
-                                <p class="card-text flex-grow-1">Huwag mong palampasin ang lahat ng pagkakataon. Masiyahan sa bawat araw na binigay sa atin.</p>
-                                <a href="#" class="btn btn-success" style="width:fit-content;">Basahin ang Story</a>
+                                <p class="card-text flex-grow-1">Huwag mong palampasin ang lahat ng pagkakataon. Masiyahan sa bawat araw na binigay sa atin. <a href="#article" style="text-decoration: none; color: rgb(0, 75, 0)">Basahin <i class="arrow right"></i></a></p>
                             </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="background-color: rgb(155, 231, 155);">Event Date: August 4, 2023</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-auto d-flex align-items-stretch">
+                    <div class="col-md-6 col-auto d-flex align-items-stretch">
                         <div class="card">
                             <img src="https://images.pexels.com/photos/40751/running-runner-long-distance-fitness-40751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top">
                             <div class="card-body d-flex flex-column justify-content-between">
                                 <h5 class="card-title">Tara na!</h5>
-                                <p class="card-text flex-grow-1">Kung hindi ngayon, kailan pa? Kung hindi dito, saan pa? Mayroon kang kakayahan sa bawat bagay.</p>
-                                <a href="#" class="btn btn-success" style="width:fit-content;">Basahin ang Story</a>
+                                <p class="card-text flex-grow-1">Kung hindi ngayon, kailan pa? Kung hindi dito, saan pa? Mayroon kang kakayahan sa bawat bagay. <a href="#article" style="text-decoration: none; color: rgb(0, 75, 0)">Basahin <i class="arrow right"></i></a></p>
                             </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="background-color: rgb(155, 231, 155);">Event Date: September 21, 2023</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
+            <a href="#next-page" class="align-self-end text-success-emphasis" style="text-decoration: none; margin-right: 10%;">Tignan ang mga nakaraang events -></a>
         </div>
 
+
+
         <!---------------------- DONATION ---------------------->
-        <div class="d-flex">
-            <div class="d-flex justify-content-lg-between justify-content-center mt-5 donateBg" style="height: 700px; color: white; background-color: rgb(26, 64, 26);">
-                <div></div>
-                <div class="flex-lg-grow-0 flex-grow-1 w-50 bgContent p-lg-5 m-5 mt-sm-1 rounded-5 p-4" style="background-color: rgb(3, 99, 3, 0.75);">
-                    <h1 class="display-1 titleText">Isa pa ba?</h1>
-                    <p class="lead fs-5" style="text-align: justify;"> Kung kaya ng iba, kaya mo rin. Lahat ng bagay ay may proseso. Saan ka ma'il dalhin ng mga suliranin, kaya mo itong lampasan.</p>
+        <div class="d-flex mb-5 divShadow" style="margin-top: 1%">
+            <div class="jumbotron p-5 donateBg" style="height: 700px; color: white;">
+                <div class="bgContent p-md-5 m-sm-5 mt-sm-1 rounded-5 p-4 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
+                    <h1 class="display-1 titleText">Kaya mo bang mag-donate?</h1>
+                    <p class="lead px-sm-4 mx-sm-4 fs-5" style="text-align: justify;">Hindi mo alam ang kayang gawin ng iyong kakayahan hangga't hindi mo itinutuloy. Kapag nananampalataya ka sa iyong sarili, magkakatotoo ang mga pangarap mo. Ang pangarap ay kayang mapaabot, sa isang taong tunay na naniniwala at lumalaban. Kasama sa pag-abot ng tagumpay ay sa pagsapit ng mga hamon. Huwag naniniwala sa sarili? Subukan ang patuloy na pagnanais sa pagsulong ng mga pangarap. Hindi tayo magtatagumpay kung hindi tayo may lakas ng loob. Isang daang hakbang ang magagawa, huwag lang titigil.</p>
                     <hr class="my-4 fs-6">
-                    <p>Darating din ang mga pagbabago. Maging bukas sa tulong ng kapwa.</p>
-                    <p class="lead">
-                        <a class="btn btn-success btn-lg" href="#LearnMore" role="button">Donate Now!</a>
+                    <p class="text-end">Pindutin ang button upang makapag-donate.</p>
+                    <p class="lead text-end">
+                        <a class="btn btn-success btn-lg" href="#article" role="button">Donate Now!</a>
                     </p>
                 </div>
             </div>
-        </div>
-
-        <!---------------------- WHERE DONATIONS GO ---------------------->
-        <div>
-            
         </div>
 
     </main>
