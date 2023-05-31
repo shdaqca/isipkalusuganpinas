@@ -15,7 +15,7 @@
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             color: white;
         }
-        .jumboBg {
+        .bgBackground {
             position: relative; 
             width: 100%;
             display: flex;
@@ -45,11 +45,15 @@
         display: inline-block;
         padding: 3px;
         }
-        .down {
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
+        .right {
+            border: solid rgba(255, 255, 255, 0.75);
+            border-width: 0 3px 3px 0;
+            transform: translate(0, -4px) rotate(-45deg);
         }
-        .card {
+        .down {
+            transform: rotate(45deg);
+        }
+        .cardShadow {
             box-shadow: 2px 6px 8px 0 rgba(22, 50, 22, 0.18);
         }
         .boxShadow {
@@ -57,13 +61,6 @@
         }
         .divShadow {
             box-shadow: 0 4px 8px 0 rgba(22, 50, 22, 0.5), 0 -4px 8px 0 rgba(22, 50, 22, 0.5);
-        }
-        .historyBg {
-            position: relative; 
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
         .historyBg::before {    
             content: "";
@@ -92,8 +89,8 @@
             <div class="navbar-nav d-flex justify-content-between">
                 <a class="nav-item nav-link active" href="about.html">About</a>
                 <a class="nav-item nav-link" href="getinvolved.html">Get Involved</a>
-                <a class="nav-item nav-link" href="#Services">Services</a>
-                <a class="nav-item nav-link" href="news-events.html">News & Events</a>
+                <a class="nav-item nav-link" href="services.html">Services</a>
+                <a class="nav-item nav-link" href="stories.html">Stories</a>
                 <a class="nav-item nav-link" href="#Donate"><b>Donate Now!</b></a>
             </div>
         </div>
@@ -105,11 +102,11 @@
         <h1 class="display-4 text-success-emphasis titleText text-center w-100 px-5 pb-2" style="margin-top:11.5%;">Saan mang sulok ng mundo, mayroong <span class="display-4 text-success-emphasis bg-success px-2 titleText">pag-asa</span>.</h1>
         <p class="fs-5 fw-light text-black text-center px-md-5 pt-md-4 pb-5" style="margin-bottom: 11.75%; margin-left: auto; margin-right: auto; width: 60%;">Hindi mo alam ang kayang gawin ng iyong kakayahan hangga't hindi mo itinutuloy. Kapag nananampalataya ka sa iyong sarili, magkakatotoo ang mga pangarap mo. Ang pangarap ay kayang mapaabot, sa isang taong tunay na naniniwala at lumalaban. Kasama sa pag-abot ng tagumpay ay sa pagsapit ng mga hamon. Huwag naniniwala sa sarili? Subukan ang patuloy na pagnanais sa pagsulong ng mga pangarap. Hindi tayo magtatagumpay kung hindi tayo may lakas ng loob. Isang daang hakbang ang magagawa, <span class="fs-5 fw-light" style="color: darkgreen;">huwag lang titigil</span>.<br><i class="arrow down mt-5"></i></p>
 
-        <!---------------------- JUMBOTRON ---------------------->
+        <!---------------------- MAIN ---------------------->
         <div class="d-flex mb-5 divShadow">
-            <div class="jumbotron p-5 jumboBg" style="height: 700px; color: white;">
+            <div class="p-5 bgBackground jumboBg" style="height: 700px; color: white;">
                 <div class="bgContent p-md-5 m-sm-5 mt-sm-1 p-4 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
-                    <h1 class="display-3 titleText text-center">Sumama sa pag-sulong ng<br>Isip-Kalusugan!</h1>
+                    <h1 class="display-2 titleText text-center">Sumama sa pag-sulong ng<br>Isip-Kalusugan!</h1>
                     <p class="lead px-sm-4 mx-sm-4 fs-5" style="text-align: justify;">Kapag sa iyo'y umapaw ang kalungkutan, dito ka sa amin, ating pag-usapan. Sa hirap ng buhay, magtitiis tayo, kailangan may lakas ng loob at sigla. Huwag magbago ng pangarap dahil sa mga hamon ng buhay. Dahil ikaw ay importante, sumama sa amin, kumusta? Hindi hadlang ang problema upang hindi maabot ang tagumpay. Gamitin ang iyong kaligayahan upang magbigay ng inspirasyon sa iba. Sana'y makatulong ang ating mga salita sa tagumpay ng kapwa. Sa bawat problema, may kaakibat na solusyon.</p>
                     <hr class="my-4 fs-6">
                     <p class="text-end">Gusto mo pa ba matuto tungkol sa Mental Health? I-click ang button!</p>
@@ -139,13 +136,11 @@
         </div>
 
         <!---------------------- HISTORY HEADING ---------------------->
-        <div class="d-flex-column mb-5" style="margin-top: 7%;">
-            <div class="jumbotron p-5 historyBg mb-4 divShadow" style="height: 400px;">
-                <div class="bgContent p-lg-5 m-5 mt-sm-1 boxShadow p-4" style="background-color: rgb(3, 99, 3, 0.75);">
-                    <h1 class="display-3 text-center titleText">Sumama sa aming Layunin!</h1>
-                    <p class="fs-5 text-center text-white">Dito po nakalagay yung history at accomplishments ng Isip-Kalusugan Pinas. Brief description lang po, pero mga ilang lines din to para mukhang may laman. Dito na rin nakalagay kung san napupunta yung mga donations (ginagamit po yung pera para sa pagpapagawa ng institutions, pag-hire ng mga professionals, at financial aid sa mga nangangailangan dahil isa po talaga sa mga leading causes ng mental health problems ang kahirapan at kapitalismo haha).</p>
-                </div>  
-            </div>
+        <div class="mb-5 p-5 bgBackground historyBg mb-4 divShadow" style="height: 400px; margin-top: 7%;">
+            <div class="bgContent p-lg-5 m-5 mt-sm-1 boxShadow p-4" style="background-color: rgb(3, 99, 3, 0.75);">
+                <h1 class="display-3 text-center titleText">Sumama sa aming Layunin!</h1>
+                <p class="fs-5 text-center text-white">Dito po nakalagay yung history at accomplishments ng Isip-Kalusugan Pinas. Brief description lang po, pero mga ilang lines din to para mukhang may laman. Dito na rin nakalagay kung san napupunta yung mga donations (ginagamit po yung pera para sa pagpapagawa ng institutions, at pag-hire ng mga mental health professionals).</p>
+            </div>  
         </div>
 
         <!---------------------- HISTORY CONTENT ---------------------->
@@ -155,13 +150,13 @@
                     <img src="https://images.pexels.com/photos/357271/pexels-photo-357271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-100 boxShadow" style="height: 400px; object-fit: cover; object-position: 0 10%; border: 5px solid rgb(0, 50, 0, 0.75);">
                 </div>
                 <div class="col-5 pb-5">
-                    <h1 class="titleText text-success-emphasis">Title title title</h1>
+                    <h1 class="titleText text-success-emphasis">Institusyon para sa mga Nangangailangan</h1>
                     <p class="text-black pe-5" style="text-align: justify; font-size: 19px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel modi maiores iste vitae, illo obcaecati maxime minima, dolorem perferendis soluta cumque aspernatur tenetur consequuntur voluptas officia molestiae saepe libero sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque illo obcaecati ad aperiam nostrum? Expedita officiis voluptatum adipisci voluptatem totam incidunt laboriosam quas quam obcaecati veniam, voluptates numquam harum perspiciatis?</p>
                 </div>
             </div>
             <div class="row mb-5">
                 <div class="col-5 pb-5">
-                    <h1 class="titleText text-success-emphasis text-end">Title title title</h1>
+                    <h1 class="titleText text-success-emphasis text-end">Mayroon kang Karamay. Hindi ka nag-iisa.</h1>
                     <p class="text-black ps-5" style="text-align: justify; font-size: 19px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquam beatae incidunt dicta minima fugit impedit, consequuntur ratione laboriosam eveniet illum, dolorum explicabo voluptate hic non quae velit. Neque, optio. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, consequuntur. Minus possimus optio provident excepturi? Ipsa, labore voluptatem! Earum tenetur optio culpa quasi, animi corrupti officiis quae autem aut eligendi!</p>
                 </div>
                 <div class="col-7">
@@ -173,21 +168,57 @@
 
         <!---------------------- MGA TAUHAN ---------------------->
         <div class="d-flex flex-column p-5 justify-content-center divShadow mt-5" style="background-color: rgb(3, 99, 3);">
-            <h1 class="display-1 titleText text-center">Mga Tauhan</h1>
+            <h1 class="display-2 titleText text-center">Mga Tauhan</h1>
             <div class="container m-5">
-                <div class="row row-cols-3">
-                    <div class="col text-white">Jenny Salvador</div>
-                    <div class="col text-white">Lorenzo P. Alcantara</div>
-                    <div class="col text-white">Silvera A. Natividad</div>
-                    <div class="col text-white">Silvera A. Natividad</div>
-                    <div class="col text-white">Silvera A. Natividad</div>
-                    <div class="col text-white">Silvera A. Natividad</div>
-                    <div class="col text-white">Silvera A. Natividad</div>
-                    <div class="col text-white">Silvera A. Natividad</div>
-                    <div class="col text-white">Silvera A. Natividad</div>
-                    <div class="col text-white">Silvera A. Natividad</div>
-                    <div class="col text-white">Silvera A. Natividad</div>
-                    <div class="col text-white">Aayusin ko pa po ito maam haha</div>
+                <div class="row row-gap-5 row-cols-3">
+                    <div class="col">
+                        <a href="#profile" style="text-decoration: none;" class="text-white fs-3">Jenny S. Salvador <i class="arrow right"></i></a>
+                        <br>
+                        <span class="fs-5 fw-light" style="color: rgb(115, 193, 115);">Chief Executive</span>
+                    </div>
+                    <div class="col">
+                        <a href="#profile" style="text-decoration: none;" class="text-white fs-3">Lorenzo P. Alcantara <i class="arrow right"></i></a>
+                        <br>
+                        <span class="fs-5 fw-light" style="color: rgb(115, 193, 115);">Executive Vice President</span>
+                    </div>
+                    <div class="col">
+                        <a href="#profile" style="text-decoration: none;" class="text-white fs-3">Silvera A. Natividad <i class="arrow right"></i></a>
+                        <br>
+                        <span class="fs-5 fw-light" style="color: rgb(115, 193, 115);">Executive Director</span>
+                    </div>
+                    <div class="col">
+                        <a href="#profile" style="text-decoration: none;" class="text-white fs-3">Sebastian T. Cruz <i class="arrow right"></i></a>
+                        <br>
+                        <span class="fs-5 fw-light" style="color: rgb(115, 193, 115);">Position Name</span>
+                    </div>
+                    <div class="col">
+                        <a href="#profile" style="text-decoration: none;" class="text-white fs-3">Dr. Merlinda Rosales <i class="arrow right"></i></a>
+                        <br>
+                        <span class="fs-5 fw-light" style="color: rgb(115, 193, 115);">Position Name</span>
+                    </div>
+                    <div class="col">
+                        <a href="#profile" style="text-decoration: none;" class="text-white fs-3">Maria Bonita S. Salvador <i class="arrow right"></i></a>
+                        <br>
+                        <span class="fs-5 fw-light" style="color: rgb(115, 193, 115);">Position Name</span>
+                        
+                    </div>
+                    <div class="col">
+                        <a href="#profile" style="text-decoration: none;" class="text-white fs-3">Brandon Gonzales Jr. <i class="arrow right"></i></a>
+                        <br>
+                        <span class="fs-5 fw-light" style="color: rgb(115, 193, 115);">Position Name</span>
+                    </div>
+                    <div class="col">
+                        <a href="#profile" style="text-decoration: none;" class="text-white fs-3">Mark Christian F. Dizon <i class="arrow right"></i></a>
+                        <br>
+                        <span class="fs-5 fw-light" style="color: rgb(115, 193, 115);">Position Name</span>
+                        
+                    </div>
+                    <div class="col">
+                        <a href="#profile" style="text-decoration: none;" class="text-white fs-3">Dale T. Navarro <i class="arrow right"></i></a>
+                        <br>
+                        <span class="fs-5 fw-light" style="color: rgb(115, 193, 115);">Position Name</span>
+                        
+                    </div>
                 </div>
             </div>
         </div>

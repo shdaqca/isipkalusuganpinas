@@ -15,7 +15,7 @@
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             color: white;
         }
-        .headlineBg {
+        .bgBackground {
             position: relative; 
             width: 100%;
             display: flex;
@@ -55,13 +55,6 @@
         .divShadow {
             box-shadow: 0 4px 8px 0 rgba(22, 50, 22, 0.5), 0 -4px 8px 0 rgba(22, 50, 22, 0.5);
         }
-        .donateBg {
-            position: relative; 
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
         .donateBg::before {    
             content: "";
             background-color: rgba(54, 70, 54, 0.75);
@@ -90,8 +83,8 @@
             <div class="navbar-nav d-flex justify-content-between">
                 <a class="nav-item nav-link" href="about.html">About</a>
                 <a class="nav-item nav-link active" href="getinvolved.html">Get Involved</a>
-                <a class="nav-item nav-link" href="#Services">Services</a>
-                <a class="nav-item nav-link" href="news-events.html">News & Events</a>
+                <a class="nav-item nav-link" href="services.html">Services</a>
+                <a class="nav-item nav-link" href="stories.html">Stories</a>
                 <a class="nav-item nav-link" href="#Donate"><b>Donate Now!</b></a>
             </div>
         </div>
@@ -101,7 +94,7 @@
 
         <!---------------------- HEADER ---------------------->
         <div class="d-flex-column mb-5">
-            <div class="jumbotron p-5 headlineBg mb-4 divShadow" style="height: 400px;"></div>
+            <div class="p-5 bgBackground headlineBg mb-4 divShadow" style="height: 400px;"></div>
             <h1 class="display-4 text-center titleText text-success-emphasis" style="letter-spacing: 1px;">Matuto tungkol sa Mental Health!</h1>
         </div>
 
@@ -170,12 +163,12 @@
 
 
         <!---------------------- EVENTS ---------------------->
-        <div class="d-flex flex-column align-items-center mb-5 w-100" style="margin-top: 7%">
+        <div class="d-flex flex-column align-items-center my-5 w-100">
             <h1 class="titleText m-5 px-5 py-3 bg-success boxShadow">Mga Events</h1>
             <div class="container mb-3">
                 <div class="row g-4">
                     <div class="col-md-6 col-auto d-flex align-items-stretch">
-                        <div class="card">
+                        <div class="card boxShadow">
                             <img src="https://images.pexels.com/photos/3978594/pexels-photo-3978594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top">
                             <div class="card-body d-flex flex-column justify-content-between">
                                 <h5 class="card-title">Kaya mo 'yan!</h5>
@@ -187,7 +180,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-auto d-flex align-items-stretch">
-                        <div class="card">
+                        <div class="card boxShadow">
                             <img src="https://images.pexels.com/photos/2821823/pexels-photo-2821823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top">
                             <div class="card-body d-flex flex-column justify-content-between">
                                 <h5 class="card-title">Break na tayo.</h5>
@@ -199,7 +192,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-auto d-flex align-items-stretch">
-                        <div class="card">
+                        <div class="card boxShadow">
                             <img src="https://images.pexels.com/photos/935977/pexels-photo-935977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top">
                             <div class="card-body d-flex flex-column justify-content-between">
                                 <h5 class="card-title">Masaya ka ba?</h5>
@@ -211,7 +204,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-auto d-flex align-items-stretch">
-                        <div class="card">
+                        <div class="card boxShadow">
                             <img src="https://images.pexels.com/photos/40751/running-runner-long-distance-fitness-40751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top">
                             <div class="card-body d-flex flex-column justify-content-between">
                                 <h5 class="card-title">Tara na!</h5>
@@ -224,14 +217,14 @@
                     </div>
                 </div>
             </div>
-            <a href="#next-page" class="align-self-end text-success-emphasis" style="text-decoration: none; margin-right: 10%;">Tignan ang mga nakaraang events -></a>
+            <a href="#article" class="align-self-end text-success-emphasis" style="text-decoration: none; margin-right: 10%;">Tignan ang lahat ng events -></a>
         </div>
 
 
 
         <!---------------------- DONATION ---------------------->
-        <div class="d-flex mb-5 divShadow" style="margin-top: 0.85%">
-            <div class="jumbotron p-5 donateBg" style="height: 700px; color: white;">
+        <div class="d-flex divShadow" style="margin-top: 4%">
+            <div class="p-5 bgBackground donateBg" style="height: 700px; color: white;">
                 <div class="bgContent p-md-5 m-sm-5 mt-sm-1 p-4 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
                     <h1 class="display-1 titleText">Kaya mo bang mag-donate?</h1>
                     <p class="lead px-sm-4 mx-sm-4 fs-5" style="text-align: justify;">Hindi mo alam ang kayang gawin ng iyong kakayahan hangga't hindi mo itinutuloy. Kapag nananampalataya ka sa iyong sarili, magkakatotoo ang mga pangarap mo. Ang pangarap ay kayang mapaabot, sa isang taong tunay na naniniwala at lumalaban. Kasama sa pag-abot ng tagumpay ay sa pagsapit ng mga hamon. Huwag naniniwala sa sarili? Subukan ang patuloy na pagnanais sa pagsulong ng mga pangarap. Hindi tayo magtatagumpay kung hindi tayo may lakas ng loob. Isang daang hakbang ang magagawa, huwag lang titigil.</p>
@@ -241,6 +234,31 @@
                         <a class="btn btn-success btn-lg" href="#article" role="button">Donate Now!</a>
                     </p>
                 </div>
+            </div>
+        </div>
+
+        <!---------------------- WHERE DONATIONS GO ---------------------->
+        <div class="container" style="margin-top: 7%; margin-bottom: 5.25%">
+            <div class="row mb-3">
+                <div class="col-7">
+                    <img src="https://images.pexels.com/photos/1963622/pexels-photo-1963622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-100 boxShadow" style="height: 500px; object-fit: cover; object-position: 55%; border: 5px solid rgb(0, 50, 0, 0.75);">
+                </div>
+                <div class="col-5 pb-5">
+                    <h1 class="titleText text-success-emphasis bg-success px-3 py-2">Saan napupunta ang mga donasyon?</h1>
+                    <p class="text-black ps-4" style="text-align: justify; font-size: 19px;">Meron po ditong short description kung san napupunta yung mga donations (ginagamit po yung pera para sa pagpapagawa ng institutions, at pag-hire ng mga mental health professionals). Tapos meron pa po ditong mga ilan pang nakasulat, depende po talaga sa goals ng Isip-Kalusugan Pinas. Mas maganda pag mahaba-haba para mukhang may laman, pero wag naman sobra-sobra para madali pa rin basahin.</p>
+                    <hr class="my-2 fs-6">
+                    <p>Gusto mo pa bang matuto tungkol sa aming layunin? Pindutin lamang ang button!</p>
+                    <a class="btn btn-success btn-lg boxShadow" href="about.html" role="button">Matuto Pa</a>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------- SERVICES ---------------------->
+        <div class="p-5 mb-5 bgBackground servicesBg divShadow" style="height: 450px; color: white;">
+            <div class="d-flex flex-column align-items-center bgContent m-5 p-5 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
+                <h1 class="display-4 px-4 text-center titleText">Huwag ikahiya ang paghingi ng tulong</h1>
+                <p class="lead text-center fs-5 my-3">Magiging maayos din ang lahat. Huwag matakot na magsimula muli. Sa bawat pagsubok, mayroong natututunan. Hindi ka nag-iisa sa laban na ito. Ang pag-ibig ay para sa lahat.</p>
+                <a class="btn btn-success btn-lg" href="services.html" role="button">Magsimula Na!</a>
             </div>
         </div>
 
