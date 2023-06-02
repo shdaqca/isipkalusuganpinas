@@ -11,7 +11,7 @@
     <style>
         .program1Bg::before {    
             content: "";
-            background-color: rgba(54, 70, 54, 0.5);
+            background-color: rgba(70, 54, 54, 0.75);
             background-image: url('https://images.pexels.com/photos/7579117/pexels-photo-7579117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
             background-blend-mode: overlay;
             position: absolute;
@@ -25,7 +25,7 @@
         }
         .program2Bg::before {    
             content: "";
-            background-color: rgba(54, 70, 54, 0.5);
+            background-color: rgba(70, 70, 54, 0.75);
             background-image: url('https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
             background-blend-mode: overlay;
             position: absolute;
@@ -39,7 +39,7 @@
         }
         .program3Bg::before {    
             content: "";
-            background-color: rgba(54, 70, 54, 0.5);
+            background-color: rgba(54, 70, 54, 0.75);
             background-image: url('https://images.pexels.com/photos/6995244/pexels-photo-6995244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
             background-blend-mode: overlay;
             position: absolute;
@@ -53,7 +53,7 @@
         }
         .program4Bg::before {    
             content: "";
-            background-color: rgba(54, 70, 54, 0.5);
+            background-color: rgba(54, 70, 70, 0.75);
             background-image: url('https://images.pexels.com/photos/4051134/pexels-photo-4051134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
             background-blend-mode: overlay;
             position: absolute;
@@ -64,6 +64,12 @@
             right: 0px;
             bottom: 0px;
             left: 0px;
+        }
+        .hoverStyle {
+            transition: 0.3s;
+        }
+        .hoverStyle:hover {
+            transform: scale(105%);
         }
 
     </style>
@@ -90,50 +96,54 @@
 
     <!---------------------- BUTTONS ---------------------->
     <main class="d-flex flex-column p-5">
-        <a href="#article" class="p-5 bgBackground program1Bg boxShadow mx-5 my-3" style="height: 300px; width: auto; text-decoration: none;">
+        <a href="#article" class="p-5 bgBackground program1Bg boxShadow mx-5 my-3 hoverStyle" style="height: 300px; width: auto; text-decoration: none; cursor: pointer;">
             <h1 class="display-1 bgContent bg-black bg-opacity-50 rounded-5 px-5 py-3 text-center titleText">Program #1</h1>
         </a>
-        <a href="#article" class="p-5 bgBackground program2Bg boxShadow mx-5 my-3" style="height: 300px; width: auto; text-decoration: none;">
+        <a href="#article" class="p-5 bgBackground program2Bg boxShadow mx-5 my-3 hoverStyle" style="height: 300px; width: auto; text-decoration: none; cursor: pointer;">
             <h1 class="display-1 bgContent bg-black bg-opacity-50 rounded-5 px-5 py-3 text-center titleText">Program #2</h1>
         </a>
-        <a href="#article" class="p-5 bgBackground program3Bg boxShadow mx-5 my-3" style="height: 300px; width: auto; text-decoration: none;">
+        <a href="#article" class="p-5 bgBackground program3Bg boxShadow mx-5 my-3 hoverStyle" style="height: 300px; width: auto; text-decoration: none; cursor: pointer;">
             <h1 class="display-1 bgContent bg-black bg-opacity-50 rounded-5 px-5 py-3 text-center titleText">Program #3</h1>
         </a>
-        <a href="#article" class="p-5 bgBackground program4Bg boxShadow mx-5 my-3" style="height: 300px; width: auto; text-decoration: none;">
+        <a href="#article" class="p-5 bgBackground program4Bg boxShadow mx-5 my-3 hoverStyle" style="height: 300px; width: auto; text-decoration: none; cursor: pointer;">
             <h1 class="display-1 bgContent bg-black bg-opacity-50 rounded-5 px-5 py-3 text-center titleText">Program #4</h1>
         </a>
-
-
-    <!---------------------- MODALS ---------------------->
-        <div class="modal fade" id="myModal3">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-
-                    <div class="modal-header">
-                        <h4 class="modal-title">Modal Header</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-
-                    <div class="modal-body">
-                        Modal Body
-                        <br><br><br>
-                        Bottom Text
-                    </div>
-
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Submit</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
+    
     </main>
 
     <!---------------------- FOOTER ---------------------->
-    <footer class="container-fluid text-center p-5" style="background-color: rgb(6, 74, 6);">
-        <p class="fs-5" style="font-family:'Courier New', Courier, monospace;color:rgb(201, 199, 197);">Made By: Shaun David Q. Calfoforo</p>
+    <footer class="d-flex flex-column text-center px-5 pt-4 pb-0" style="background-color: rgb(6, 74, 6);">
+        <div class="d-flex flex-row justify-content-between">
+            <div class="w-50">
+                <h3 class="titleText text-start">Mag-subscribe sa Isip-Kalusugan Pinas!</h3>
+                <p class="text-white text-start ps-4">Maka-tanggap ng latest na balita at mga updates sa iyong email! I-type lamang ang iyong email address at pindutin ang "Subscribe".</p>
+            </div>
+            <div class="align-self-center">
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Email Address">
+                    <button class="btn btn-success" type="button">Subscribe</button>
+                </div>  
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-between">
+            <div class="d-flex flex-column">
+                <h4 class="titleText text-start">I-follow ang Isip-Kalusugan Pinas sa Social Media!</h4>
+                <div class="d-flex flex-row justify-content-between">
+                    <a href="#link" style="text-decoration: none;" class="text-primary">Facebook</a>
+                    <a href="#link" style="text-decoration: none;" class="text-info">Twitter</a>
+                    <a href="#link" style="text-decoration: none; color: rgb(214,41,118);">Instagram</a>
+                    <a href="#link" style="text-decoration: none;" class="text-danger">Youtube</a>
+                </div>
+            </div>
+            <div class="d-flex flex-column">
+                <h4 class="titleText text-start">I-contact ang Isip-Kalusugan Pinas!</h4>
+                <div class="d-flex flex-column">
+                    <p class="text-white text-start">Contact No.: +639234567890<br>
+                        Address: MacArthur Hwy, Brgy, Valenzuela, 1441 Metro Manila<br>
+                        Email Address: isipkalusuganpinas@gmail.com</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
