@@ -1,0 +1,65 @@
+/* ARTICLES TITLE */
+@media (min-width: 992px) {
+    .articleTitle {
+        width: 70%
+    }
+}
+
+/* ARTICLES TEXT */
+@media (min-width: 900.02px) {
+    .responsiveFont3 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 992px) {
+    .responsiveFont3 {
+        font-size: 16px;
+    }
+}
+@media (max-width: 992px) {
+    .responsiveFont3 {
+        font-size: 16px;
+    }
+}
+
+/* ARTICLES SIZE */
+@media (min-width: 768px) {
+    .articleSize {
+        height: 250px;
+    }
+}
+@media (max-width: 767.98px) {
+    .articleSize {
+        width: calc(75vw);
+        align-self: center;
+    }
+}
+
+/* ARTICLES IMG */
+@media (min-width: 768px) {
+    .articleImg {
+        width: 300px;
+        height: auto;
+    }
+}
+
+/* ARTICLES ASIDE */
+@media (max-width: 1199.98px) {
+    .asideCard {
+        display: none;
+    }
+}
+
+/* DONATION EXTRA TEXT */
+@media (max-width: 991.98px) {
+    .textExtra {
+        display: none;
+    }
+}
+
+/* DONATE DESCRIPTION IMG */
+@media (min-width: 992px) {
+    .donateBg2 {
+        height: 500px;
+    }
+}
