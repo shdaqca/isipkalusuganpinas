@@ -45,3 +45,53 @@
 .down {
     transform: rotate(45deg);
 }
+
+/*********** RESPONSIVENESS ***********/
+
+/* titleText FONTS */
+@media (max-width: 425px) {
+    .titleText {
+        font-size: 36px;
+    }
+}
+@media (max-width: 375px) {
+    .titleText {
+        text-align: center;
+    }
+}
+@media (max-width: 320px) {
+    .titleText {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+
+/* PARAGRAPH FONTS */
+@media (min-width: 425.02px) {
+    .responsiveFont1 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 425px) {
+    .responsiveFont1 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 320px) {
+    .responsiveFont1 {
+        font-size: 16px;
+    }
+}
+
+/* PARAGRAPH FONTS (SMALL) */
+@media (min-width: 425.02px) {
+    .responsiveFont2 {
+        font-size: 16px;
+    }
+}
+@media (max-width: 425px) {
+    .responsiveFont2 {
+        font-size: 14px;
+    }
+}

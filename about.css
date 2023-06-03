@@ -1,0 +1,10 @@
+@media (min-width: 1200px) {
+    .intro {
+        width: 60%; 
+    }
+}
+@media (max-width: 1024px) {
+    .intro {
+        width: 80%;
+    }
+}
