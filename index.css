@@ -1,17 +1,3 @@
-/* JUMBOTRON SIZE */
-@media (min-width: 425.02px) {
-    .bgBackground {
-        height: 700px; 
-    }
-}
-@media (max-width: 425px) {
-    .bgBackground {
-        height: 500px;
-    }
-}
-
-
-
 /* ABOUT BG */
 @media (min-width: 425.02px) {
     .aboutBg {
@@ -24,8 +10,6 @@
         height: calc(100vw - 120px);
     }
 }
-
-/*********** CUSTOM BACKGROUNDS ***********/
 
 /* DONATE BG */
 @media (min-width: 1200px) {

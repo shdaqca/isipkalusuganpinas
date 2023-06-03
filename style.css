@@ -47,6 +47,17 @@
 }
 
 /*********** RESPONSIVENESS ***********/
+/* JUMBOTRON SIZE */
+@media (min-width: 425.02px) {
+    .bgBackground {
+        height: 700px; 
+    }
+}
+@media (max-width: 425px) {
+    .bgBackground {
+        height: 500px;
+    }
+}
 
 /* titleText FONTS */
 @media (max-width: 425px) {
