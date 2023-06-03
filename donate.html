@@ -42,7 +42,7 @@
 <body style="background-image: url(https://images.pexels.com/photos/1200225/pexels-photo-1200225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); height: 100%; background-position: center; background-size: cover; background-color: rgba(250, 255, 250, 0.875); background-blend-mode: overlay;">
 
     <!---------------------- NAVBAR ---------------------->
-    <nav class="navbar navbar-expand-md navbar-dark nav-underline sticky-top px-5 py-3 navbar-toggler rounded-0 divShadow" style="background-color: rgb(6, 74, 6);">
+    <nav class="navbar navbar-expand-md navbar-dark nav-underline sticky-top px-lg-5 px-3 py-3 navbar-toggler rounded-0 divShadow justify-content-between" style="background-color: rgb(6, 74, 6);">
         <a class="navbar-brand fs-3 titleText" href="index.html">Isip-Kalusugan Pinas</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapsed">
             <span class="navbar-toggler-icon"></span>
@@ -70,63 +70,124 @@
 
         
         <!---------------------- DONATE ---------------------->
-        <form class="d-flex flex-column form-inline needs-validation p-5 align-items-center" novalidate>
+        <div class="d-flex flex-row align-items-center">
+            <form class="d-flex flex-column form-inline needs-validation p-5 align-items-center" novalidate>
 
-            <p class="titleText text-success-emphasis fs-3">Step 1: Pumili ng Amount:</p>
-            <div class="form-group row mb-3">
-                <div class="col-auto input-group input-group-lg">
-                    <span class="input-group-text bg-success-subtle cardShadow text-success-emphasis">Php</span>
-                    <input type="number" class="form-control cardShadow" placeholder="Amount" required>
-                    <span class="input-group-text bg-success-subtle cardShadow text-success-emphasis">.00</span>
+                <p class="titleText text-success-emphasis fs-3 text-center">Step 1: Pumili ng Amount:</p>
+                <div class="form-group row mb-3">
+                    <div class="col-auto input-group input-group-lg">
+                        <span class="input-group-text bg-success-subtle cardShadow text-success-emphasis">Php</span>
+                        <input type="number" class="form-control cardShadow" placeholder="1000" required>
+                        <span class="input-group-text bg-success-subtle cardShadow text-success-emphasis">.00</span>
+                    </div>
                 </div>
-            </div>
+    
+                <div class="form-group row mb-4 pb-4">
+                    <div class="col-auto btn-group">
+                        <input type="radio" class="btn-check" name="donateFreq" id="freqOnce" required>
+                        <label class="btn btn-light cardShadow" for="freqOnce">One Time</label>
+    
+                        <input type="radio" class="btn-check" name="donateFreq" id="freqMonthly" required>
+                        <label class="btn btn-light cardShadow" for="freqMonthly">Monthly</label>
+    
+                        <input type="radio" class="btn-check" name="donateFreq" id="freqAnnually" required>
+                        <label class="btn btn-light cardShadow" for="freqAnnually">Anually</label>
+                    </div>
+                </div>
+    
+                <p class="titleText text-success-emphasis fs-3 text-center">Step 2: Ilagay ang iyong Pangalan (Optional):</p>
+                <div class="form-group row mb-4 pb-4">
+                    <div class="col-auto">
+                        <label for="lastname" class="form-label">Last Name</label>
+                        <input type="text" class="form-control cardShadow" id="lastname" placeholder="Dela Cruz">
+                    </div>
+                    <div class="col-auto">
+                        <label for="fastname" class="form-label">First Name</label>
+                        <input type="text" class="form-control cardShadow" id="firstname" placeholder="Juan Carlos">
+                    </div>
+                    <div class="col-auto">
+                        <label for="middleinitial" class="form-label">M.I.</label>
+                        <input type="text" class="form-control cardShadow" id="middleinitial" placeholder="F." style="width: 50px">
+                    </div>
+                </div>
+    
+                <p class="titleText text-success-emphasis fs-3 text-center">Step 3: Ilagay ang iyong Contact Information:</p>
+                <div class="form-group row mb-4 pb-4">
+                    <div class="col-auto">
+                        <label for="emailadd">Email Address</label>
+                        <input type="email" class="form-control cardShadow" id="emailadd" placeholder="jcdelacruz@gmail.com" required>
+                    </div>
+                    <div class="col-auto">
+                        <label for="contactno">Contact Number</label>
+                        <input type="text" class="form-control cardShadow" id="contactno" placeholder="09123456789" required>
+                    </div>
+                </div>
+                
+                <div class="cardShadow">
+                    <button type="submit" class="btn btn-success py-2 px-4 rounded-0">Magpatuloy</button>
+                </div>
+    
+            </form>
+            <h1 class="titleText text-success-emphasis">or</h1>
+            <form class="d-flex flex-column form-inline needs-validation p-5 align-items-center" novalidate>
 
-            <div class="form-group row mb-4 pb-4">
-                <div class="col-auto btn-group">
-                    <input type="radio" class="btn-check" name="donateFreq" id="freqOnce" required>
-                    <label class="btn btn-light cardShadow" for="freqOnce">One Time</label>
-
-                    <input type="radio" class="btn-check" name="donateFreq" id="freqMonthly" required>
-                    <label class="btn btn-light cardShadow" for="freqMonthly">Monthly</label>
-
-                    <input type="radio" class="btn-check" name="donateFreq" id="freqAnnually" required>
-                    <label class="btn btn-light cardShadow" for="freqAnnually">Anually</label>
+                <p class="titleText text-success-emphasis fs-3 text-center">Step 1: Pumili ng Amount:</p>
+                <div class="form-group row mb-3">
+                    <div class="col-auto input-group input-group-lg">
+                        <span class="input-group-text bg-success-subtle cardShadow text-success-emphasis">Php</span>
+                        <input type="number" class="form-control cardShadow" placeholder="1000" required>
+                        <span class="input-group-text bg-success-subtle cardShadow text-success-emphasis">.00</span>
+                    </div>
                 </div>
-            </div>
-
-            <p class="titleText text-success-emphasis fs-3">Step 2: Ilagay ang iyong Pangalan:</p>
-            <div class="form-group row mb-4 pb-4">
-                <div class="col-auto">
-                    <label for="lastname" class="form-label">Last Name</label>
-                    <input type="text" class="form-control cardShadow" id="lastname" placeholder="Last Name" required>
+    
+                <div class="form-group row mb-4 pb-4">
+                    <div class="col-auto btn-group">
+                        <input type="radio" class="btn-check" name="donateFreq" id="freqOnce" required>
+                        <label class="btn btn-light cardShadow" for="freqOnce">One Time</label>
+    
+                        <input type="radio" class="btn-check" name="donateFreq" id="freqMonthly" required>
+                        <label class="btn btn-light cardShadow" for="freqMonthly">Monthly</label>
+    
+                        <input type="radio" class="btn-check" name="donateFreq" id="freqAnnually" required>
+                        <label class="btn btn-light cardShadow" for="freqAnnually">Anually</label>
+                    </div>
                 </div>
-                <div class="col-auto">
-                    <label for="fastname" class="form-label">First Name</label>
-                    <input type="text" class="form-control cardShadow" id="firstname" placeholder="First Name" required>
+    
+                <p class="titleText text-success-emphasis fs-3 text-center">Step 2: Ilagay ang iyong Pangalan (Optional):</p>
+                <div class="form-group row mb-4 pb-4">
+                    <div class="col-auto">
+                        <label for="lastname" class="form-label">Last Name</label>
+                        <input type="text" class="form-control cardShadow" id="lastname" placeholder="Dela Cruz">
+                    </div>
+                    <div class="col-auto">
+                        <label for="fastname" class="form-label">First Name</label>
+                        <input type="text" class="form-control cardShadow" id="firstname" placeholder="Juan Carlos">
+                    </div>
+                    <div class="col-auto">
+                        <label for="middleinitial" class="form-label">M.I.</label>
+                        <input type="text" class="form-control cardShadow" id="middleinitial" placeholder="F." style="width: 50px">
+                    </div>
                 </div>
-                <div class="col-auto">
-                    <label for="middleinitial" class="form-label">Middle Initial</label>
-                    <input type="text" class="form-control cardShadow" id="middleinitial" placeholder="Middle Initial" required>
+    
+                <p class="titleText text-success-emphasis fs-3 text-center">Step 3: Ilagay ang iyong Contact Information:</p>
+                <div class="form-group row mb-4 pb-4">
+                    <div class="col-auto">
+                        <label for="emailadd">Email Address</label>
+                        <input type="email" class="form-control cardShadow" id="emailadd" placeholder="jcdelacruz@gmail.com" required>
+                    </div>
+                    <div class="col-auto">
+                        <label for="contactno">Contact Number</label>
+                        <input type="text" class="form-control cardShadow" id="contactno" placeholder="09123456789" required>
+                    </div>
                 </div>
-            </div>
-
-            <p class="titleText text-success-emphasis fs-3">Step 3: Ilagay ang iyong Contact Information:</p>
-            <div class="form-group row mb-4 pb-4">
-                <div class="col-auto">
-                    <label for="emailadd">Email Address</label>
-                    <input type="email" class="form-control cardShadow" id="emailadd" placeholder="Email Address" required>
+                
+                <div class="cardShadow">
+                    <button type="submit" class="btn btn-success py-2 px-4 rounded-0">Magpatuloy</button>
                 </div>
-                <div class="col-auto">
-                    <label for="contactno">Contact Number</label>
-                    <input type="text" class="form-control cardShadow" id="contactno" placeholder="Contact Number" required>
-                </div>
-            </div>
-            
-            <div class="cardShadow">
-                <button type="submit" class="btn btn-success py-2 px-4 rounded-0">Magpatuloy</button>
-            </div>
-
-        </form>
+    
+            </form>
+        </div>
+        
 
         <!---------------------- ABOUT ---------------------->
         <div class="d-flex divShadow">
@@ -137,7 +198,7 @@
                     <hr class="my-4 fs-6">
                     <p class="text-end">Gusto mo pa bang matuto tungkol sa aming layunin? Pindutin lamang ang button!</p>
                     <p class="lead text-end">
-                        <a class="btn btn-success btn-lg" href="donate.html" role="button">Matuto Pa</a>
+                        <a class="btn btn-success btn-lg" href="about.html" role="button">Matuto Pa</a>
                     </p>
                 </div>
             </div>

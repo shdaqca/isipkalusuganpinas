@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Isip-Kalusugan Pinas</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <style>
         .headlineBg1::before {    
@@ -62,14 +63,6 @@
             bottom: 0px;
             left: 0px;
         }
-        @media (min-width: 1200px) {
-            .donateBg::before {
-                background-position: left;
-                margin-left: 5%;
-                background-repeat: no-repeat;
-                background-size: 75%;
-            }
-        }
         .servicesBg::before {    
             content: "";
             background-color: rgba(54, 70, 54, 0.65);
@@ -85,12 +78,14 @@
             left: 0px;
         }
     </style>
+    
+    <link rel="stylesheet" type="text/css" href="index.css">
 
 </head>
 <body style="background-image: url(https://images.pexels.com/photos/1200225/pexels-photo-1200225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); height: 100%; background-position: center; background-size: cover; background-color: rgba(250, 255, 250, 0.875); background-blend-mode: overlay;">
 
     <!---------------------- NAVBAR ---------------------->
-    <nav class="navbar navbar-expand-md navbar-dark nav-underline sticky-top px-5 py-3 navbar-toggler rounded-0 divShadow" style="background-color: rgb(6, 74, 6);">
+    <nav class="navbar navbar-expand-md navbar-dark nav-underline sticky-top px-lg-5 p-3 navbar-toggler rounded-0 divShadow justify-content-between" style="background-color: rgb(6, 74, 6);">
         <a class="navbar-brand fs-3 titleText" href="index.html">Isip-Kalusugan Pinas</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapsed">
             <span class="navbar-toggler-icon"></span>
@@ -112,40 +107,40 @@
         <div id="mainCarousel" class="carousel slide mb-5 divShadow" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item">
-                    <div class="p-5 bgBackground headlineBg1" style="height: 700px; color: white;">
-                        <div class="bgContent p-md-5 m-sm-5 mt-sm-1 p-4 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
+                    <div class="p-lg-5 p-3 bgBackground headlineBg1" style="color: white;">
+                        <div class="bgContent p-md-5 m-sm-5 mt-sm-1 p-3 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
                             <h1 class="display-1 titleText">Kaya mo 'yan!</h1>
-                            <p class="lead pe-5 me-5 " style="text-align: justify; font-size: calc(4 * sqrt(vw));">Saan ka man naroroon, may pag-asa pa rin. Walang masamang tumanggap ng tulong. Kung nakakaranas ng kalungkutan, kakayanin mo rin ang ligaya.</p>
-                            <hr class="my-4 fs-6">
-                            <p>Magiging maayos din ang lahat. Huwag matakot na magsimula muli. Sali na!</p>
+                            <p class="lead pe-lg-5 me-lg-5 responsiveFont1" >Saan ka man naroroon, may pag-asa pa rin. Walang masamang tumanggap ng tulong. Kung nakakaranas ng kalungkutan, kakayanin mo rin ang ligaya.</p>
+                            <hr class="my-lg-4 my-2 fs-6">
+                            <p class="responsiveFont2">Magiging maayos din ang lahat. Huwag matakot na magsimula muli. Sali na!</p>
                             <p class="lead">
-                                <a class="btn btn-success btn-lg" href="#article" role="button">Basahin ang Article</a>
+                                <a class="btn btn-success btn-lg responsiveFont1" href="#article" role="button">Basahin ang Article</a>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item active">
-                    <div class="p-5 bgBackground headlineBg2" style="height: 700px; color: white;">
-                        <div class="bgContent p-md-5 m-sm-5 mt-sm-1 p-4 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
+                    <div class="p-lg-5 p-3 bgBackground headlineBg2" style="color: white;">
+                        <div class="bgContent p-md-5 m-sm-5 mt-sm-1 p-3 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
                             <h1 class="display-1 titleText">Kumusta ka?</h1>
-                            <p class="lead pe-5 me-5 " style="text-align: justify; font-size: calc(4 * sqrt(vw));">Sa hirap ng buhay, magtitiis tayo, kailangan may lakas ng loob at sigla. Huwag magbago ng pangarap dahil sa mga hamon ng buhay. Dahil ikaw ay importante, sumama sa amin, kumusta?</p>
-                            <hr class="my-4 fs-6">
-                            <p>Sana'y makatulong ang ating mga salita sa tagumpay ng kapwa.</p>
+                            <p class="lead pe-lg-5 me-lg-5 responsiveFont1" >Sa hirap ng buhay, magtitiis tayo, kailangan may lakas ng loob at sigla. Huwag magbago ng pangarap dahil sa mga hamon ng buhay. Dahil ikaw ay importante, sumama sa amin, kumusta?</p>
+                            <hr class="my-lg-4 my-2 fs-6">
+                            <p class="responsiveFont2">Sana'y makatulong ang ating mga salita sa tagumpay ng kapwa.</p>
                             <p class="lead">
-                                <a class="btn btn-success btn-lg" href="#article" role="button">Basahin ang Article</a>
+                                <a class="btn btn-success btn-lg responsiveFont1" href="#article" role="button">Basahin ang Article</a>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="p-5 bgBackground headlineBg3" style="height: 700px; color: white;">
-                        <div class="bgContent p-md-5 m-sm-5 mt-sm-1 p-4 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
+                    <div class="p-lg-5 p-3 bgBackground headlineBg3" style="color: white;">
+                        <div class="bgContent p-md-5 m-sm-5 mt-sm-1 p-3 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
                             <h1 class="display-1 titleText">Natatakot ka ba?</h1>
-                            <p class="lead pe-5 me-5 " style="text-align: justify; font-size: calc(4 * sqrt(vw));">Walang imposible sa mga gustong magtagumpay. Sa bawat kasawian, mayroong pag-asa. Huwag matakot sumabak sa mga bagong hamon. Tumayo sa pag-abot ng mga pangarap.</p>
-                            <hr class="my-4 fs-6">
-                            <p>Kapag hindi mo na alam ang susunod, tumingin sa mga kanan at kaliwa, makakahanap ka ng gabay.</p>
+                            <p class="lead pe-lg-5 me-lg-5 responsiveFont1" >Walang imposible sa mga gustong magtagumpay. Sa bawat kasawian, mayroong pag-asa. Huwag matakot sumabak sa mga bagong hamon. Tumayo sa pag-abot ng mga pangarap.</p>
+                            <hr class="my-lg-4 my-2 fs-6">
+                            <p class="responsiveFont2">Kapag hindi mo na alam ang susunod, tumingin sa mga kanan at kaliwa, makakahanap ka ng gabay.</p>
                             <p class="lead">
-                                <a class="btn btn-success btn-lg" href="#article" role="button">Basahin ang Article</a>
+                                <a class="btn btn-success btn-lg responsiveFont1" href="#article" role="button">Basahin ang Article</a>
                             </p>
                         </div>
                     </div>
@@ -164,18 +159,18 @@
         
         <!---------------------- ARTICLE ---------------------->
         <div class="d-flex flex-column align-items-center mt-0 w-100" style="margin-bottom: 30px;">
-            <h1 class="titleText mt-4 mb-5 px-5 py-3 bg-success boxShadow">Ang Aming Latest</h1>
+            <h1 class="titleText mt-4 mb-5 px-md-5 px-4 py-3 bg-success boxShadow">Ang Aming Latest</h1>
             <div class="container mb-3">
                 <div class="row g-4">
                     <div class="col-lg-3 col-md-6 col-auto d-flex align-items-stretch">
                         <div class="card cardShadow">
                             <img src="https://images.pexels.com/photos/3978594/pexels-photo-3978594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top">
                             <div class="card-body d-flex flex-column justify-content-between">
-                                <h5 class="card-title">Kaya mo 'yan!</h5>
-                                <p class="card-text flex-grow-1">Saan ka ma'il dalhin ng mga suliranin, kaya mo itong lampasan. Walang perpektong buhay, kaya huwag na maghanap.</p>
-                                <a href="#article" class="btn btn-success" style="width:fit-content;">Basahin ang Article</a>
+                                <h5 class="card-title responsiveFont1">Kaya mo 'yan!</h5>
+                                <p class="card-text flex-grow-1 responsiveFont2">Saan ka ma'il dalhin ng mga suliranin, kaya mo itong lampasan. Walang perpektong buhay, kaya huwag na maghanap.</p>
+                                <a href="#article" class="btn btn-success responsiveFont2" style="width:fit-content;">Basahin ang Article</a>
                             </div>
-                            <div class="card-footer">
+                            <div class="card-footer responsiveFont2">
                                 Blog
                             </div>
                         </div>
@@ -184,11 +179,11 @@
                         <div class="card cardShadow">
                             <img src="https://images.pexels.com/photos/2821823/pexels-photo-2821823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top">
                             <div class="card-body d-flex flex-column justify-content-between">
-                                <h5 class="card-title">Break na tayo.</h5>
-                                <p class="card-text flex-grow-1">Ang pag-ibig ay hindi nag-iisa. Ang pagsama sama ay makakatulong sa pagkakaroon ng malusog na kaisipan.</p>
-                                <a href="#article" class="btn btn-success" style="width:fit-content;">Basahin ang Article</a>
+                                <h5 class="card-title responsiveFont1">Break na tayo.</h5>
+                                <p class="card-text flex-grow-1 responsiveFont2">Ang pag-ibig ay hindi nag-iisa. Ang pagsama sama ay makakatulong sa pagkakaroon ng malusog na kaisipan.</p>
+                                <a href="#article" class="btn btn-success responsiveFont2" style="width:fit-content;">Basahin ang Article</a>
                             </div>
-                            <div class="card-footer">
+                            <div class="card-footer responsiveFont2">
                                 Event
                             </div>
                         </div>
@@ -197,11 +192,11 @@
                         <div class="card cardShadow">
                             <img src="https://images.pexels.com/photos/935977/pexels-photo-935977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top">
                             <div class="card-body d-flex flex-column justify-content-between">
-                                <h5 class="card-title">Masaya ka ba?</h5>
-                                <p class="card-text flex-grow-1">Huwag mong palampasin ang lahat ng pagkakataon. Masiyahan sa bawat araw na binigay sa atin.</p>
-                                <a href="#article" class="btn btn-success" style="width:fit-content;">Basahin ang Article</a>
+                                <h5 class="card-title responsiveFont1">Masaya ka ba?</h5>
+                                <p class="card-text flex-grow-1 responsiveFont2">Huwag mong palampasin ang lahat ng pagkakataon. Masiyahan sa bawat araw na binigay sa atin.</p>
+                                <a href="#article" class="btn btn-success responsiveFont2" style="width:fit-content;">Basahin ang Article</a>
                             </div>
-                            <div class="card-footer">
+                            <div class="card-footer responsiveFont2">
                                 Article
                             </div>
                         </div>
@@ -210,11 +205,11 @@
                         <div class="card cardShadow">
                             <img src="https://images.pexels.com/photos/40751/running-runner-long-distance-fitness-40751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top">
                             <div class="card-body d-flex flex-column justify-content-between">
-                                <h5 class="card-title">Tara na!</h5>
-                                <p class="card-text flex-grow-1">Kung hindi ngayon, kailan pa? Kung hindi dito, saan pa? Mayroon kang kakayahan sa bawat bagay.</p>
-                                <a href="#article" class="btn btn-success" style="width:fit-content;">Basahin ang Article</a>
+                                <h5 class="card-title responsiveFont1">Tara na!</h5>
+                                <p class="card-text flex-grow-1 responsiveFont2">Kung hindi ngayon, kailan pa? Kung hindi dito, saan pa? Mayroon kang kakayahan sa bawat bagay.</p>
+                                <a href="#article" class="btn btn-success responsiveFont2" style="width:fit-content;">Basahin ang Article</a>
                             </div>
-                            <div class="card-footer">
+                            <div class="card-footer responsiveFont2">
                                 Blog
                             </div>
                         </div>
@@ -226,15 +221,15 @@
 
         <!---------------------- DONATION ---------------------->
         <div class="d-flex divShadow">
-            <div class="d-flex justify-content-lg-between justify-content-center bgBackground donateBg" style="height: 700px; color: white; background-color: rgb(26, 64, 26);">
+            <div class="d-flex justify-content-lg-between justify-content-center bgBackground donateBg" style="color: white; background-color: rgb(26, 64, 26);">
                 <div></div>
-                <div class="flex-lg-grow-0 flex-grow-1 w-50 rounded-4 bgContent p-lg-5 m-5 mt-sm-1 p-4 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
+                <div class="flex-lg-grow-0 flex-grow-1 w-50 rounded-4 bgContent p-lg-5 m-3 m-md-5 p-4 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
                     <h1 class="display-1 titleText">Kaya mo bang Tumulong?</h1>
-                    <p class="lead fs-5" style="text-align: justify;">Huwag mong ikahiya ang paghingi ng tulong. Pag-ibig para sa sarili ay importante. Magpakatatag sa kabila ng hirap.</p>
-                    <hr class="my-4 fs-6">
-                    <p>Darating din ang mga pagbabago. Maging bukas sa tulong ng kapwa.</p>
+                    <p class="lead responsiveFont1">Huwag mong ikahiya ang paghingi ng tulong. Pag-ibig para sa sarili ay importante. Magpakatatag sa kabila ng hirap.</p>
+                    <hr class="my-lg-4 my-2 fs-6">
+                    <p class="responsiveFont2">Darating din ang mga pagbabago. Maging bukas sa tulong ng kapwa.</p>
                     <p class="lead">
-                        <a class="btn btn-success btn-lg" href="donate.html" role="button">Donate Now!</a>
+                        <a class="btn btn-success btn-lg responsiveFont1" href="donate.html" role="button">Donate Now!</a>
                     </p>
                 </div>
             </div>
@@ -243,31 +238,31 @@
         <!---------------------- ABOUT ---------------------->
         <div class="container" style="margin-top: 7%; margin-bottom: 5.25%">
             <div class="row mb-3">
-                <div class="col-7">
-                    <img src="https://images.pexels.com/photos/1963622/pexels-photo-1963622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-100 boxShadow" style="height: 500px; object-fit: cover; object-position: 55%; border: 5px solid rgb(0, 50, 0, 0.75);">
+                <div class="col-lg-7 col-auto mb-4 mb-lg-0">
+                    <img src="https://images.pexels.com/photos/1963622/pexels-photo-1963622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-100 boxShadow aboutBg" style="object-fit: cover; object-position: 55%; border: 5px solid rgb(0, 50, 0, 0.75);">
                 </div>
-                <div class="col-5 pb-5">
+                <div class="col-lg-5 col-auto pb-lg-5">
                     <h1 class="titleText text-success-emphasis bg-success px-3 py-2 boxShadow">Ano ang Isip-Kalusugan Pinas?</h1>
-                    <p class="text-black ps-4" style="text-align: justify; font-size: 19px;">Malusog na isip, malusog na buhay. Magpakatatag sa kabila ng hirap. Saan ka man naroroon, may pag-asa pa rin. Walang masamang tumanggap ng tulong. Kung nakakaranas ng kalungkutan, kakayanin mo rin ang ligaya. Bago bigyan ng iba, unahin mo muna ang sarili. Magiging maayos din ang lahat. Huwag matakot na magsimula muli. Sa bawat pagsubok, mayroong natututunan. Hindi ka nag-iisa sa laban na ito.</p>
-                    <hr class="my-2 fs-6">
-                    <p>Gusto mo pa bang matuto tungkol sa aming layunin? Pindutin lamang ang button!</p>
-                    <a class="btn btn-success btn-lg boxShadow" href="about.html" role="button">Matuto Pa</a>
+                    <p class="text-black ps-lg-4 responsiveFont1" style="text-align: justify;">Malusog na isip, malusog na buhay. Magpakatatag sa kabila ng hirap. Saan ka man naroroon, may pag-asa pa rin. Walang masamang tumanggap ng tulong. Kung nakakaranas ng kalungkutan, kakayanin mo rin ang ligaya. Bago bigyan ng iba, unahin mo muna ang sarili. Magiging maayos din ang lahat. Huwag matakot na magsimula muli. Sa bawat pagsubok, mayroong natututunan. Hindi ka nag-iisa sa laban na ito.</p>
+                    <hr class="my-lg-4 my-2 fs-6">
+                    <p class="responsiveFont2">Gusto mo pa bang matuto tungkol sa aming layunin? Pindutin lamang ang button!</p>
+                    <a class="btn btn-success btn-lg responsiveFont1 boxShadow" href="about.html" role="button">Matuto Pa</a>
                 </div>
             </div>
         </div>
-
+        
         <!---------------------- SERVICES ---------------------->
-        <div class="p-5 bgBackground servicesBg divShadow" style="height: 450px; color: white;">
-            <div class="d-flex flex-column align-items-center bgContent m-5 p-5 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
-                <h1 class="display-4 px-4 text-center titleText">Huwag ikahiya ang paghingi ng tulong</h1>
-                <p class="lead text-center fs-5 my-3">Magiging maayos din ang lahat. Huwag matakot na magsimula muli. Sa bawat pagsubok, mayroong natututunan. Hindi ka nag-iisa sa laban na ito. Ang pag-ibig ay para sa lahat.</p>
-                <a class="btn btn-success btn-lg" href="services.html" role="button">Magsimula Na!</a>
+        <div class="p-lg-5 p-3 bgBackground servicesBg divShadow" style="height: 450px; color: white;">
+            <div class="d-flex flex-column align-items-center bgContent p-md-5 m-sm-4 mt-sm-1 p-lg-4 p-2 boxShadow" style="background-color: rgb(3, 99, 3, 0.75);">
+                <h1 class="display-4 px-lg-4 text-center titleText">Huwag ikahiya ang paghingi ng tulong</h1>
+                <p class="lead text-center my-lg-3 responsiveFont1">Magiging maayos din ang lahat. Huwag matakot na magsimula muli. Sa bawat pagsubok, mayroong natututunan. Hindi ka nag-iisa sa laban na ito. Ang pag-ibig ay para sa lahat.</p>
+                <a class="btn btn-success btn-lg responsiveFont1" href="services.html" role="button">Magsimula Na!</a>
             </div>
         </div>
         
     </main>
 
-    <!---------------------- FOOTER ---------------------->
+    <!-- -------------------- FOOTER -------------------- -->
     <footer class="d-flex flex-column text-center px-5 pt-4 pb-0" style="background-color: rgb(6, 74, 6);">
         <div class="d-flex flex-row justify-content-between">
             <div class="w-50">

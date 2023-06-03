@@ -1,0 +1,99 @@
+/* JUMBOTRON SIZE */
+@media (min-width: 425.02px) {
+    .bgBackground {
+        height: 700px; 
+    }
+}
+@media (max-width: 425px) {
+    .bgBackground {
+        height: 500px;
+    }
+}
+
+/* titleText FONTS */
+@media (max-width: 425px) {
+    .titleText {
+        font-size: 36px;
+    }
+}
+@media (max-width: 375px) {
+    .titleText {
+        text-align: center;
+    }
+}
+@media (max-width: 320px) {
+    .titleText {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+
+/* PARAGRAPH FONTS */
+@media (min-width: 425.02px) {
+    .responsiveFont1 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 425px) {
+    .responsiveFont1 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 320px) {
+    .responsiveFont1 {
+        font-size: 16px;
+    }
+}
+
+/* PARAGRAPH FONTS (SMALL) */
+@media (min-width: 425.02px) {
+    .responsiveFont2 {
+        font-size: 16px;
+    }
+}
+@media (max-width: 425px) {
+    .responsiveFont2 {
+        font-size: 14px;
+    }
+}
+
+/* ABOUT BG */
+@media (min-width: 425.02px) {
+    .aboutBg {
+        height: 500px;
+    }
+}
+
+@media (max-width: 425px) {
+    .aboutBg {
+        height: calc(100vw - 120px);
+    }
+}
+
+/*********** CUSTOM BACKGROUNDS ***********/
+
+/* DONATE BG */
+@media (min-width: 1200px) {
+    .donateBg::before {
+        background-position: left;
+        margin-left: 5%;
+        background-repeat: no-repeat;
+        background-size: 75%;
+    }
+}
+
+/* SERVICES BG */
+@media (min-width: 425.02px) {
+    .servicesBg {
+        height: 450px !important;
+    }
+}
+@media (max-width: 425px) {
+    .servicesBg {
+        height: 325px !important;
+    }
+}
+
+
+
