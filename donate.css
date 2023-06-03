@@ -1,0 +1,23 @@
+/* HEADER HEIGHT */
+@media (min-width: 768px) {
+    .headerBg {
+        height: 535px;
+    }
+}
+@media (max-width: 767.98px) {
+    .headerBg {
+        height: 300px;
+    }
+}
+
+/* HEADER SPACE */
+@media (min-width: 768px) {
+    .headerSpace {
+        display: none;
+    }
+}
+@media (max-width: 767.98px) {
+    .headerBreak {
+        display: none;
+    }
+}

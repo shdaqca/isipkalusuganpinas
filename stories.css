@@ -1,0 +1,23 @@
+/* HEADLINE BG */
+@media (min-width: 992px) {
+    .headlineBg {
+        height: 550px;
+    }
+}
+@media (max-width: 991.98px) {
+    .headlineBg {
+        height: 100%;
+    }
+}
+
+/* HEADLINE IMG */
+@media (min-width: 992px) {
+    .headlineImg {
+        width: 60%;
+    }
+}
+@media (max-width: 991.98px) {
+    .headlineImg {
+        width: 100%;
+    }
+}
