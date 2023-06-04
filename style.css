@@ -46,6 +46,33 @@
     transform: rotate(45deg);
 }
 
+/*********** FOOTER ***********/
+.footerText {
+    color: #198754 !important;
+}
+
+/* FOOTER LINKS */
+.footerLink:hover {
+    color: #5ba884 !important;
+}
+
+/* SOCMED ICONS */
+.fa {
+    color: #198754;
+}
+.fa-facebook-square:hover {
+    color: #3b5998 !important;
+}
+.fa-twitter-square:hover {
+    color: #00acee !important;
+}
+.fa-instagram:hover {
+    color: #d62976 !important;
+}
+.fa-youtube-square:hover {
+    color: #c4302b !important;
+}
+
 /*********** RESPONSIVENESS ***********/
 /* JUMBOTRON SIZE */
 @media (min-width: 425.02px) {
@@ -104,5 +131,12 @@
 @media (max-width: 425px) {
     .responsiveFont2 {
         font-size: 14px;
+    }
+}
+
+/* FOOTER LINKS */
+@media (min-width: 768px) {
+    .footerLink {
+        width: auto;
     }
 }

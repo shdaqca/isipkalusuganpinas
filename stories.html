@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>Stories</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <style>
@@ -256,40 +257,62 @@
 
     </main>
 
-    <!---------------------- FOOTER ---------------------->
-    <footer class="d-flex flex-column text-center px-5 pt-4 pb-0" style="background-color: rgb(6, 74, 6);">
-        <div class="d-flex flex-row justify-content-between">
-            <div class="w-50">
-                <h3 class="titleText text-start">Mag-subscribe sa Isip-Kalusugan Pinas!</h3>
-                <p class="text-white text-start ps-4">Maka-tanggap ng latest na balita at mga updates sa iyong email! I-type lamang ang iyong email address at pindutin ang "Subscribe".</p>
+    <!-- -------------------- FOOTER -------------------- -->
+    <footer class="d-flex flex-column text-center footerText" style="background-color: rgb(36, 73, 36);">
+        <div class="d-flex flex-lg-row flex-column justify-content-between align-items-center divShadow row-gap-3 px-lg-5 px-md-2 px-3 py-lg-4 py-3" style="background-color: rgb(22, 45, 22)">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-md-5 g-3">
+                <a href="#link" class="col responsiveFont1 titleText footerText footerLink align-self-center" style="text-decoration: none;">PRIVACY NOTICE</a>
+                <a href="#link" class="col responsiveFont1 titleText footerText footerLink align-self-center" style="text-decoration: none;">TERMS OF SERVICE</a>
+                <a href="#link" class="col responsiveFont1 titleText footerText footerLink align-self-center" style="text-decoration: none;">ABOUT US</a>
+                <a href="#link" class="col responsiveFont1 titleText footerText footerLink align-self-center" style="text-decoration: none;">CONTACT US</a>
             </div>
-            <div class="align-self-center">
-                <div class="input-group mb-3">
-                    <input type="email" class="form-control" placeholder="Email Address">
-                    <button class="btn btn-success" type="button">Subscribe</button>
-                </div>  
+            <div class="row row-cols-2 row-cols-sm-4 g-md-5 g-3">
+                <a href="#link" class="col fa fa-2x fa-facebook-square" style="text-decoration: none;"></a>
+                <a href="#link" class="col fa fa-2x fa-twitter-square" style="text-decoration: none;"></a>
+                <a href="#link" class="col fa fa-2x fa-instagram" style="text-decoration: none;"></a>
+                <a href="#link" class="col fa fa-2x fa-youtube-square" style="text-decoration: none;"></a>
             </div>
         </div>
-        <div class="d-flex flex-row justify-content-between">
-            <div class="d-flex flex-column">
-                <h4 class="titleText text-start">I-follow ang Isip-Kalusugan Pinas sa Social Media!</h4>
-                <div class="d-flex flex-row justify-content-between">
-                    <a href="#link" style="text-decoration: none;" class="text-primary">Facebook</a>
-                    <a href="#link" style="text-decoration: none;" class="text-info">Twitter</a>
-                    <a href="#link" style="text-decoration: none; color: rgb(214,41,118);">Instagram</a>
-                    <a href="#link" style="text-decoration: none;" class="text-danger">Youtube</a>
-                </div>
+        <div class="d-flex flex-column justify-content-center align-self-center py-lg-5 py-3 px-4 px-lg-0 mt-3 mb-4">
+            <div>
+                <h2 class="titleText footerText text-center">Mag-subscribe sa Isip-Kalusugan Pinas!</h2>
+                <p class="text-center responsiveFont1 fw-light">Maka-tanggap ng latest na balita at mga updates sa iyong email! I-type lamang ang iyong email address at pindutin ang "Subscribe".</p>
             </div>
-            <div class="d-flex flex-column">
-                <h4 class="titleText text-start">I-contact ang Isip-Kalusugan Pinas!</h4>
-                <div class="d-flex flex-column">
-                    <p class="text-white text-start">Contact No.: +639234567890<br>
-                        Address: MacArthur Hwy, Brgy, Valenzuela, 1441 Metro Manila<br>
-                        Email Address: isipkalusuganpinas@gmail.com</p>
+            <form class="align-self-center needs-validation" novalidate>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Email Address" required>
+                    <button type="submit" class="btn btn-success">Subscribe</button>
                 </div>
-            </div>
+            </form>
+        </div>
+        <div class="mb-3 px-2 px-md-0 responsiveFont2">
+            <p class="my-0">Fugiat qui facere doloribus consectetur voluptatibus culpa perferendis libero quas.</p>
+            <p class="my-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
     </footer>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+          'use strict'
+        
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.querySelectorAll('.needs-validation')
+        
+          // Loop over them and prevent submission
+          Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+              form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+        
+                form.classList.add('was-validated')
+              }, false)
+            })
+        })()
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
